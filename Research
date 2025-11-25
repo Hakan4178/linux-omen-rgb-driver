@@ -1,1 +1,15 @@
+WHAT WE FOUND - INFORMATION DISCOVERED
 
+1. HID Protocol Structure (100% Solved)
+
+65-byte HID reports discovered
+Report ID: 0x02, Command: 0x01 (SetStatic) was set
+576-byte batch processing (8-9 report) system solved
+It was discovered that the HyperX Generic Keyboard protocol was used
+2. Windows API Chain (100% Mapped)
+
+OmenLighting_Keyboard_SetStatic() → sub_1800489E0() → sub_180046E50() → HidD_SetFeature()
+3. DeviceKeys Enum (100% Removed)
+
+104 key mappings were obtained from the Aurora project
+Critical keys such as ESC=1, A=60, W=40, S=61, D=62 were determined
