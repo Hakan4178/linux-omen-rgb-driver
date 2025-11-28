@@ -16,3 +16,7 @@ Critical keys such as ESC=1, A=60, W=40, S=61, D=62 were determined
 
 576-byte buffer 4-byte per key 
 65-byte chunks transmission 
+
+It's almost over, the first trials will start for trial purposes.
+I'm thinking of an unregulated MVP for 2 weeks, the number of supported models is around 10 for now. 
+I'm not sure about PID and Vendor ID.
