@@ -20,3 +20,5 @@ Critical keys such as ESC=1, A=60, W=40, S=61, D=62 were determined
 It's almost over, the first trials will start for trial purposes.
 I'm thinking of an unregulated MVP for 2 weeks, the number of supported models is around 10 for now. 
 I'm not sure about PID and Vendor ID.
+
+Good news, I solved the zone structure, and when sending HID directly didn't work, I realized that it was EC, albeit late, but I use it with an if else that won't be wasted.
