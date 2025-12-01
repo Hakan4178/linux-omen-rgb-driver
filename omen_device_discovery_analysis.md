@@ -114,7 +114,7 @@ mov     [device_array+8], rax   ; Store next
 .text:000000018004D9B6                 jnz     short loc_18004D960      ; Continue loop
 ```
 
-### 🔍 HID BUFFER STRUCTURE KEŞFİ:
+### 🔍 HID BUFFER STRUCTURE:
 
 #### **Buffer Layout Analysis:**
 ```c
@@ -199,5 +199,6 @@ Chunk 2: offset 130  (0x82)
 Chunk 3: offset 195  (0xC3)
 ...
 ```
+
 
 
