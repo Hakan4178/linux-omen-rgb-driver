@@ -12,7 +12,7 @@
  * - Conservative approach with minimal risk
  * 
  * Author: OMEN Linux Project
- * License: GPL v3
+ * License: GPL v2
  */
 
 #include <stdio.h>
@@ -784,4 +784,5 @@ int main(int argc, char *argv[]) {
     printf("[INFO] This ultra-safe approach confirms the virtual HID theory\n");
     
     return 0;
+
 }
