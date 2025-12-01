@@ -1,4 +1,4 @@
-# HP OMEN/Victus RGB Control - Comprehensive Safety Guide
+# HP OMEN/Victus RGB EC TEST Control - Comprehensive Safety Guide
 
 ## 🚨 CRITICAL SAFETY INFORMATION
 
@@ -418,5 +418,6 @@ Application → I/O Ports (0x62/0x66) → EC → Hardware
 **Remember: When in doubt, don't proceed. It's better to have a working system than to risk hardware damage for RGB lighting.**
 
 **The goal is to validate the architecture safely - if this tool works, we can build a complete, safe driver. If it doesn't work, we have other approaches to try.**
+
 
 **Safety first, RGB second! 🛡️**
