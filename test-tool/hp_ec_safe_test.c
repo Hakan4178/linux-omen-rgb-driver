@@ -15,6 +15,8 @@
  * License: GPL v3
  */
 
+#define _POSIX_C_SOURCE 199309L  // clock_gettime 
+#define _DEFAULT_SOURCE          // usleep
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -784,4 +786,5 @@ int main(int argc, char *argv[]) {
     printf("[INFO] This ultra-safe approach confirms the virtual HID theory\n");
     
     return 0;
+
 }
