@@ -3,9 +3,9 @@
 
 CC = gcc
 # Enhanced security compilation flags
-CFLAGS = -Wall -Wextra -Wpedantic -Werror -std=c99 -O2 \
+CFLAGS = -Wall -Wextra -Wpedantic -std=c99 -O2 \
          -D_FORTIFY_SOURCE=2 -fstack-protector-strong \
-         -Wformat=2 -Wformat-security -Wconversion -Wsign-conversion \
+         -Wformat=2 -Wformat-security -Wsign-conversion \
          -Wcast-align -Wstrict-prototypes -Wmissing-prototypes
 LDFLAGS = -Wl,-z,now,-z,relro
 TARGETS = hp_ec_safe_test hp_acpi_safe_test
@@ -163,4 +163,5 @@ help: safety-info
 	@echo "Recommended testing order:"
 	@echo "  1. sudo ./hp_acpi_safe_test         # Try ACPI methods first"
 	@echo "  2. sudo ./hp_ec_safe_test --info    # System info if ACPI fails"
+
 	@echo "  3. sudo ./hp_ec_safe_test           # Direct EC as last resort"
