@@ -22,3 +22,12 @@ I'm thinking of an unregulated MVP for 2 weeks, the number of supported models i
 I'm not sure about PID and Vendor ID.
 
 Good news, I solved the zone structure, and when sending HID directly didn't work, I realized that it was EC, albeit late, but I use it with an if else that won't be wasted.
+Today I started to solve the Virtual HID driver structure and almost created the architecture. 
+It is more complex than I expected, but it will probably take 6-7 days to make a user space tool for testing purposes.
+
+ LOOK: I decompiled the complete.sys file from the beginning bit by bit , I'm only halfway through
+
+**Part 1: Virtual HID Framework (VHFK, device context, memory management)**
+**Part 2: IOCTL Processing (0xB0329, state machine, VHF dispatch)**
+**Part 3: Driver Entry (DriverEntry, CPU optimization, security features)**
+
