@@ -612,7 +612,7 @@ static int safe_ec_test(void) {
     log_message(LOG_INFO, "[SAFETY] Use ACPI methods or kernel modules for actual RGB control\n");
     
     printf("\n[SAFETY] All tests completed\n");
-    return 1;
+    return 0;
 }
 
 /*
@@ -787,5 +787,6 @@ int main(int argc, char *argv[]) {
     return 0;
 
 }
+
 
 
