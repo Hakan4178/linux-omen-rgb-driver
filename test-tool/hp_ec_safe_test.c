@@ -193,8 +193,7 @@ static int safe_file_read(const char* filename, char* buffer, size_t size) {
     FILE *fp = fopen(filename, "r");
     if (!fp) return -1;
     
-    int result = 0;
-    if (!fgets(buffer, size, fp)) {
+    if (!fgets(buffer, (int)size, fp)) {  // size_t -> int castint result = 0;
         result = -1;
     } else {
         // First remove newline
@@ -788,3 +787,4 @@ int main(int argc, char *argv[]) {
     return 0;
 
 }
+
