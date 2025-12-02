@@ -289,7 +289,7 @@ static void emergency_exit(int sig) {
  * Check if this is an HP/OMEN/Victus system
  */
 static int check_hp_system(void) {
-    FILE *fp;
+    //FILE *fp;
     char buffer[256];
     int hp_detected = 0;
     
@@ -787,4 +787,5 @@ int main(int argc, char *argv[]) {
     return 0;
 
 }
+
 
