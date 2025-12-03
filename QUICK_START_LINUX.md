@@ -1,10 +1,9 @@
-# 🚀 OMEN/Victus Linux RGB - Hızlı Başlangıç Rehberi
+# 🎯 GET STARTED NOW - 3 STEPS
 
-## 🎯 HEMEN BAŞLAYIN - 3 ADIM
+1️⃣ PREPARE THE FILES
 
-### **1️⃣ DOSYALARI HAZIRLAYIN**
 ```bash
-# Tüm dosyaları Linux sistemine kopyalayın:
+# Copy all files to the Linux system:
 # - hp_ec_safe_test.c
 # - hp_acpi_safe_test.c  
 # - Makefile
@@ -13,88 +12,90 @@
 # - LINUX_USAGE_GUIDE.md
 ```
 
-### **2️⃣ DERLEYİN**
+2️⃣ COMPILE
+
 ```bash
-# Gerekli paketleri yükleyin:
+# Install required packages:
 sudo apt update
 sudo apt install build-essential gcc make
 
-# Derleme:
+# Compilation:
 make all
 
-# Başarılı çıktı:
+# Successful output:
 # gcc -Wall -Wextra -O2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -c hp_ec_safe_test.c
 # gcc -Wall -Wextra -O2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -c hp_acpi_safe_test.c
 # gcc -Wl,-z,now,-z,relro -o hp_ec_safe_test hp_ec_safe_test.o
 # gcc -Wl,-z,now,-z,relro -o hp_acpi_safe_test hp_acpi_safe_test.o
 ```
 
-### **3️⃣ GÜVENLİ SIRAYLA TEST EDİN**
+3️⃣ TEST IN SAFE ORDER
+
 ```bash
-# A) EN GÜVENLİ - ACPI discovery
+# A) SAFEST - ACPI discovery
 sudo ./hp_acpi_safe_test
 
-# B) GÜVENLİ - System info
+# B) SAFE - System info
 sudo ./hp_ec_safe_test --info
 
-# C) ORTA RİSK - EC discovery  
+# C) MEDIUM RISK - EC discovery  
 sudo ./hp_ec_safe_test
 ```
 
-## 📊 BEKLENEN SONUÇLAR
+📊 EXPECTED RESULTS
 
-### **SENARYO A: Direct EC Access** ✅
-```
+SCENARIO A: Direct EC Access ✅
+text
 [INFO] Testing EC command: 0x51
 [INFO] EC Status after: 0x50
 [INFO] EC Data: 0x01 0x02 0x03 0x04
 [INFO] ✅ BREAKTHROUGH: EC responds to RGB commands!
-```
-**→ Phase 2: Kernel module development**
+→ Phase 2: Kernel module development
 
-### **SENARYO B: ACPI Interface** ✅
-```
+SCENARIO B: ACPI Interface ✅
+text
 [INFO] Found ACPI method: \_SB.PC00.LPCB.EC0._Q66
 [INFO] Found ACPI method: \_SB.WMID.WQMO
 [INFO] RGB-related ACPI methods discovered: 2
-```
-**→ Phase 2: ACPI platform driver**
+→ Phase 2: ACPI platform driver
 
-### **SENARYO C: Virtual HID** ✅
-```
+SCENARIO C: Virtual HID ✅
+text
 [INFO] EC Status: 0x00 (Ready)
 [INFO] Command sent, but no RGB response
 [INFO] ✅ BREAKTHROUGH: Virtual HID architecture confirmed!
-```
-**→ Phase 2: Virtual HID implementation**
 
-## 🎉 SONUÇLARI PAYLAŞIN
+# → Phase 2: Virtual HID implementation
 
-Her test sonrasında **tam çıktıyı** kopyalayıp paylaşın:
+🎉 SHARE THE RESULTS
+After each test, copy and share the complete output:
 
 ```bash
-# Çıktıları kaydedin:
+# Save the outputs:
 sudo ./hp_acpi_safe_test > acpi_results.txt 2>&1
 sudo ./hp_ec_safe_test --info > ec_info.txt 2>&1  
 sudo ./hp_ec_safe_test > ec_test.txt 2>&1
-
-# Bu dosyaları paylaşın veya içeriklerini kopyalayın
 ```
 
-## 🚨 GÜVENLİK
+ Share these files or copy their contents
+ 
+# 🚨 SECURITY
 
 ```bash
-# Test öncesi:
-# 1. Sistem backup'ı alın
-# 2. Recovery USB hazırlayın
-# 3. Herhangi bir sorun varsa HEMEN durdurun
+# Before testing:
+# 1. Take a system backup
+# 2. Prepare a recovery USB
+# 3. STOP IMMEDIATELY if there are any problems
 ```
 
-## 🎯 SONUÇ
+# 🎯 RESULT
 
-Bu testlerden sonra:
-- ✅ **RGB Hardware Architecture** keşfedilecek
-- ✅ **Phase 2 Strategy** belirlenecek
-- ✅ **Linux RGB Control** başlayacak!
+After these tests:
 
-**🚀 Hazırsanız testleri çalıştırın ve sonuçları paylaşın!**
+✅ RGB Hardware Architecture will be discovered
+
+✅ Phase 2 Strategy will be determined
+
+✅ Linux RGB Control will begin!
+
+🚀 If you are ready, run the tests and share the results!
