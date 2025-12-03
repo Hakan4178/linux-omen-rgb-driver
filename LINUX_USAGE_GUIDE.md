@@ -1,4 +1,4 @@
-#OMEN/Victus Linux RGB Control - User Guide 🐧
+##OMEN/Victus Linux RGB Control - User Guide 🐧
 
 🎯 PHASE 1: Hardware Architecture Discovery
 Purpose: To discover how RGB control works in your Victus/OMEN system and validate our virtual HID architecture theory.
@@ -247,3 +247,4 @@ dmesg | tail -50
 journalctl -xe | tail -50
 
 🎯 ARE YOU READY? Let's start discovering the secrets of RGB control in Linux! 🚀
+
