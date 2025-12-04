@@ -6,3 +6,11 @@ Note: Reverse engineering is finished for the minimum limited features. I'm goin
 Today I am very tired but finish ACPI reverse phase find all ACPI command set.
 
 21:45 I wrote a simple driver right now, let's see if the ACPI commands are correct.
+
+Many, many, many problems
+
+
+
+
+
+
