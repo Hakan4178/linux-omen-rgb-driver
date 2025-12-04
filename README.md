@@ -9,6 +9,10 @@ Today I am very tired but finish ACPI reverse phase find all ACPI command set.
 
 Many, many, many problems
 
+Restart and dualboot count: 24 
+
+I started buying full ec dump, I'm really tired of it
+
 
 
 
