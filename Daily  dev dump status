@@ -31,3 +31,7 @@ Part 1: Virtual HID Framework (VHFK, device context, memory management)
 Part 2: IOCTL Processing (0xB0329, state machine, VHF dispatch)
 Part 3: Driver Entry (DriverEntry, CPU optimization, security features)
 
+Direct ec writing is okay, but it's dangerous, the acpi test tool is stuck.
+I don't know, anyway, I wrote a device detection system for the driver, it's quite wrong.
+I have a few more tools, but I don't share it because it's mostly patched and makeshift.
+I'm thinking of making a tesepit tool for contribution when the MVP is finished.
