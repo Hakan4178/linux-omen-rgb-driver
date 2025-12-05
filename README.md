@@ -15,6 +15,8 @@ I started buying full ec dump, I'm really tired of it
 
 Comparison is very difficult, I'm tired of seeing assembly and hex, luckily I have the HID layer completely.
 
+Kernel debugging...
+
 
 
 
