@@ -7,14 +7,19 @@ Big Breakthrough!
 Full architecture:
 
 App (HP Omen Lighting Service / UI)
+
    ↓
 OmenSDK.dll  (user‑mode API)
+
    ↓
 WMI or DeviceIoControl
+
    ↓
 OMENLighting.sys (kernel driver)
+
    ↓
 ACPI → EC write
+
    ↓
 Keyboard / RGB MCU
 
