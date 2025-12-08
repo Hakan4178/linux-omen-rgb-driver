@@ -35,3 +35,58 @@ Direct ec writing is okay, but it's dangerous, the acpi test tool is stuck.
 I don't know, anyway, I wrote a device detection system for the driver, it's quite wrong.
 I have a few more tools, but I don't share it because it's mostly patched and makeshift.
 I'm thinking of making a tesepit tool for contribution when the MVP is finished.
+
+make -f Makefile discover
+=== Building Victus ACPI Discovery Tool ===
+make -C /lib/modules/6.16.8+kali-amd64/build M=/home/hakan/Masaüstü modules
+make[1]: Entering directory '/usr/src/linux-headers-6.16.8+kali-amd64'
+make[2]: Entering directory '/home/hakan/Masaüstü'
+make[2]: Leaving directory '/home/hakan/Masaüstü'
+make[1]: Leaving directory '/usr/src/linux-headers-6.16.8+kali-amd64'
+✓ Build completed
+=== Running Victus ACPI Discovery ===
+sudo insmod victus_acpi_discovery.ko
+[sudo] password for hakan: 
+✓ Module loaded - Discovery running...
+
+=== DISCOVERY RESULTS ===
+Victus ACPI Method Discovery Results
+===================================
+
+System Info:
+  Vendor: HP
+  Product: Victus by HP Gaming Laptop 16-s0xxx
+
+🎯 WORKING RGB METHODS:
+----------------------
+✅ \_SB.WMID.WQAB - RGB COMMAND SUCCESSFUL!
+
+⚠️  EXISTING BUT NON-WORKING METHODS:
+------------------------------------
+⚠️  \_SB.WMID.WMAA - Exists but SECU test failed: AE_AML_BUFFER_LIMIT
+
+SUMMARY:
+--------
+Total tested: 25
+Methods found: 2
+Working RGB methods: 1
+
+NEXT STEPS:
+-----------
+✅ SUCCESS! Update main driver to use working method(s)
+1. Copy working path.method to main driver
+2. Test with different RGB colors
+3. Implement full RGB control
+
+=== KERNEL MESSAGES ===
+[  411.381470] victus_acpi_discovery: Victus ACPI Discovery Tool starting
+[  411.381473] victus_acpi_discovery: Starting Victus ACPI discovery...
+[  411.381474] victus_acpi_discovery: Testing 200 combinations
+[  411.381493] victus_acpi_discovery: Found ACPI path: \_SB.WMID
+[  411.381506] victus_acpi_discovery: ✓ Method exists: \_SB.WMID.WMAA
+[  411.381582] victus_acpi_discovery: ⚠️  Method exists but SECU test failed: \_SB.WMID.WMAA (AE_AML_BUFFER_LIMIT)
+[  411.381592] victus_acpi_discovery: ✓ Method exists: \_SB.WMID.WQAB
+[  411.381600] victus_acpi_discovery: 🎯 WORKING RGB METHOD: \_SB.WMID.WQAB
+[  411.381617] victus_acpi_discovery: Discovery completed!
+[  411.381620] victus_acpi_discovery: Results available at /proc/victus_acpi_discovery
+
