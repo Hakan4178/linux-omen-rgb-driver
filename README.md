@@ -1,5 +1,5 @@
 # linux-omen-rgb-driver
-   reddit: u/ Linux kernel driver for HP Omen RGB keyboard - Mainline goal
+Linux kernel driver for HP Omen RGB keyboard - Mainline goal
 CURRENTLY İN REVERSE ENGİNEERİNG!
 
 Big Breakthrough!
