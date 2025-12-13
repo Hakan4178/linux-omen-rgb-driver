@@ -2,6 +2,9 @@
 Linux kernel driver for HP Omen RGB keyboard - Mainline goal
 CURRENTLY İN REVERSE ENGİNEERİNG!
 
+Sorry, I don't have all the architecture and driver plans because I messed up the header structure of the encrypted disk with Veracrypt. 
+Actually, I'm not sure. 
+
 Big Breakthrough!
 
 Full architecture:
