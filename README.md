@@ -25,7 +25,7 @@ Named Pipe (CommandsServerIPC)
              
 Omen Lighting Service (background) 
 
-THİS LİNE İS the daily *DEVelopment* line: But I searched for piped and couldn't find it, so I focused on the service part. 
+THİS LİNE İS the daily *DEVelopment* line: But I searched for piped and couldn't find it, so I focused on the service part. SERVICE_NAME: HPOmenCap DISPLAY_NAME: HP Omen HSA Service
 
    ↓
 ACPI → EC write
