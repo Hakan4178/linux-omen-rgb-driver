@@ -25,7 +25,7 @@ Named Pipe (CommandsServerIPC)
              
 Omen Lighting Service (background) 
 
-THİS LİNE İS the daily *DEVelopment* line: But I searched for piped and couldn't find it, so I focused on the service part. SERVICE_NAME: HPOmenCap DISPLAY_NAME: HP Omen HSA Service
+THİS LİNE İS the daily *DEVelopment* line: But I searched for piped and couldn't find it, so I focused on the service part. SERVICE_NAME: HPOmenCap DISPLAY_NAME: HP Omen HSA Service I think I'll see all sorts of things on this road, it turns out that this kernel driver is not a very meaningful thing Still: guid='5B9766D8-6844-47AC-AB55-53952C9BE5BC
 
    ↓
 ACPI → EC write
