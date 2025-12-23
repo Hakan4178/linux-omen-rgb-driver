@@ -1,0 +1,472 @@
+
+.text:000000014000105C arg_10          = qword ptr  18h
+.text:000000014000105C
+.text:000000014000105C                 mov     [rsp+arg_0], rbx
+.text:0000000140001061                 mov     [rsp+arg_8], rbp
+.text:0000000140001066                 mov     [rsp+arg_10], rsi
+.text:000000014000106B                 push    rdi
+.text:000000014000106C                 sub     rsp, 20h
+.text:0000000140001070                 xor     ebp, ebp
+.text:0000000140001072                 mov     rsi, rdx
+.text:0000000140001075                 mov     rdi, rcx
+.text:0000000140001078                 test    rcx, rcx
+.text:000000014000107B                 jnz     short loc_140001087
+.text:000000014000107D                 call    sub_140006000
+.text:0000000140001082                 jmp     loc_14000116E
+.text:0000000140001087 ; ---------------------------------------------------------------------------
+.text:0000000140001087
+.text:0000000140001087 loc_140001087:                          ; CODE XREF: DriverEntry+1F↑j
+.text:0000000140001087                 mov     cs:qword_1400030E0, rcx
+.text:000000014000108E                 lea     rax, unk_1400030F0
+.text:0000000140001095                 lea     rcx, DestinationString ; DestinationString
+.text:000000014000109C                 mov     cs:DestinationString.Buffer, rax
+.text:00000001400010A3                 mov     dword ptr cs:DestinationString.Length, 2080000h
+.text:00000001400010AD                 call    cs:RtlCopyUnicodeString
+.text:00000001400010B3                 lea     r9, qword_1400030D0
+.text:00000001400010BA                 mov     rcx, rdi
+.text:00000001400010BD                 lea     r8, unk_140003030
+.text:00000001400010C4                 lea     rdx, DestinationString
+.text:00000001400010CB                 call    WdfVersionBind
+.text:00000001400010D0                 test    eax, eax
+.text:00000001400010D2                 js      loc_14000116E
+.text:00000001400010D8                 mov     rax, cs:qword_1400030D8
+.text:00000001400010DF                 lea     rcx, unk_140003030
+.text:00000001400010E6                 mov     rdx, [rax+648h]
+.text:00000001400010ED                 mov     cs:qword_1400030E8, rdx
+.text:00000001400010F4                 call    sub_140001220
+.text:00000001400010F9                 mov     ebx, eax
+.text:00000001400010FB                 test    eax, eax
+.text:00000001400010FD                 js      short loc_140001167
+.text:00000001400010FF                 call    sub_1400011B4
+.text:0000000140001104                 mov     ebx, eax
+.text:0000000140001106                 test    eax, eax
+.text:0000000140001108                 js      short loc_140001167
+.text:000000014000110A                 mov     rdx, rsi
+.text:000000014000110D                 mov     rcx, rdi
+.text:0000000140001110                 call    sub_140006000
+.text:0000000140001115                 mov     ebx, eax
+.text:0000000140001117                 test    eax, eax
+.text:0000000140001119                 js      short loc_140001167
+.text:000000014000111B                 mov     rax, cs:qword_1400030D0
+.text:0000000140001122                 cmp     [rax+30h], bpl
+.text:0000000140001126                 jz      short loc_14000114E
+.text:0000000140001128                 mov     rcx, [rdi+68h]
+.text:000000014000112C                 mov     rax, cs:qword_1400030C8
+.text:0000000140001133                 test    rcx, rcx
+.text:0000000140001136                 cmovnz  rax, rcx
+.text:000000014000113A                 mov     cs:qword_1400030C8, rax
+.text:0000000140001141                 lea     rax, sub_14000118C
+.text:0000000140001148                 mov     [rdi+68h], rax
+.text:000000014000114C                 jmp     short loc_140001163
+.text:000000014000114E ; ---------------------------------------------------------------------------
+.text:000000014000114E
+.text:000000014000114E loc_14000114E:                          ; CODE XREF: DriverEntry+CA↑j
+.text:000000014000114E                 mov     eax, [rax+8]
+.text:0000000140001151                 test    al, 2
+.text:0000000140001153                 jz      short loc_140001163
+.text:0000000140001155                 lea     rax, sub_140001184
+.text:000000014000115C                 mov     cs:qword_1400030E8, rax
+.text:0000000140001163
+.text:0000000140001163 loc_140001163:                          ; CODE XREF: DriverEntry+F0↑j
+.text:0000000140001163                                         ; DriverEntry+F7↑j
+.text:0000000140001163                 xor     eax, eax
+.text:0000000140001165                 jmp     short loc_14000116E
+.text:0000000140001167 ; ---------------------------------------------------------------------------
+.text:0000000140001167
+.text:0000000140001167 loc_140001167:                          ; CODE XREF: DriverEntry+A1↑j
+.text:0000000140001167                                         ; DriverEntry+AC↑j ...
+.text:0000000140001167                 call    sub_140001000
+.text:000000014000116C                 mov     eax, ebx
+.text:000000014000116E
+.text:000000014000116E loc_14000116E:                          ; CODE XREF: DriverEntry+26↑j
+.text:000000014000116E                                         ; DriverEntry+76↑j ...
+.text:000000014000116E                 mov     rbx, [rsp+28h+arg_0]
+.text:0000000140001173                 mov     rbp, [rsp+28h+arg_8]
+.text:0000000140001178                 mov     rsi, [rsp+28h+arg_10]
+.text:000000014000117D                 add     rsp, 20h
+.text:0000000140001181                 pop     rdi
+.text:0000000140001182                 retn
+.text:0000000140001182 DriverEntry     endp
+.text:0000000140001182
+.text:0000000140001182 ; ---------------------------------------------------------------------------
+.text:0000000140001183 algn_140001183:                         ; DATA XREF: .pdata:0000000140004018↓o
+.text:0000000140001183                 align 4
+.text:0000000140001184
+.text:0000000140001184 ; =============== S U B R O U T I N E =======================================
+.text:0000000140001184
+.text:0000000140001184 ; Attributes: thunk
+.text:0000000140001184
+.text:0000000140001184 sub_140001184   proc near               ; DATA XREF: DriverEntry+F9↑o
+.text:0000000140001184                 jmp     sub_140001000
+.text:0000000140001184 sub_140001184   endp
+.text:0000000140001184
+.text:0000000140001184 ; ---------------------------------------------------------------------------
+.text:0000000140001189                 align 4
+.text:000000014000118C
+.text:000000014000118C ; =============== S U B R O U T I N E =======================================
+.text:000000014000118C
+.text:000000014000118C
+.text:000000014000118C sub_14000118C   proc near               ; DATA XREF: DriverEntry+E5↑o
+.text:000000014000118C                                         ; sub_14000118C+10↓o ...
+.text:000000014000118C                 sub     rsp, 28h
+.text:0000000140001190                 mov     rax, cs:qword_1400030C8
+.text:0000000140001197                 test    rax, rax
+.text:000000014000119A                 jz      short loc_1400011AA
+.text:000000014000119C                 lea     rdx, sub_14000118C
+.text:00000001400011A3                 cmp     rax, rdx
+.text:00000001400011A6                 jz      short loc_1400011AA
+.text:00000001400011A8                 call    rax ; qword_1400030C8
+.text:00000001400011AA
+.text:00000001400011AA loc_1400011AA:                          ; CODE XREF: sub_14000118C+E↑j
+.text:00000001400011AA                                         ; sub_14000118C+1A↑j
+.text:00000001400011AA                 add     rsp, 28h
+.text:00000001400011AE                 jmp     sub_140001000
+.text:00000001400011AE sub_14000118C   endp
+.text:00000001400011AE
+.text:00000001400011AE ; ---------------------------------------------------------------------------
+.text:00000001400011B3 algn_1400011B3:                         ; DATA XREF: .pdata:0000000140004024↓o
+.text:00000001400011B3                 align 4
+.text:00000001400011B4
+.text:00000001400011B4 ; =============== S U B R O U T I N E =======================================
+.text:00000001400011B4
+.text:00000001400011B4
+.text:00000001400011B4 sub_1400011B4   proc near               ; CODE XREF: DriverEntry+A3↑p
+.text:00000001400011B4                                         ; DATA XREF: .pdata:0000000140004030↓o
+.text:00000001400011B4
+.text:00000001400011B4 arg_0           = qword ptr  8
+.text:00000001400011B4
+.text:00000001400011B4                 mov     [rsp+arg_0], rbx
+.text:00000001400011B9                 push    rdi
+.text:00000001400011BA                 sub     rsp, 20h
+.text:00000001400011BE                 lea     rax, unk_140003090
+.text:00000001400011C5                 lea     rdi, unk_1400030A0
+.text:00000001400011CC                 cmp     rax, rdi
+.text:00000001400011CF                 jbe     short loc_1400011D8
+.text:00000001400011D1                 mov     eax, 0C000007Bh
+.text:00000001400011D6                 jmp     short loc_14000120E
+.text:00000001400011D8 ; ---------------------------------------------------------------------------
+.text:00000001400011D8
+.text:00000001400011D8 loc_1400011D8:                          ; CODE XREF: sub_1400011B4+1B↑j
+.text:00000001400011D8                 lea     rax, unk_1400030A0
+.text:00000001400011DF                 cmp     rax, rdi
+.text:00000001400011E2                 jnb     short loc_14000120C
+.text:00000001400011E4                 lea     rbx, DestinationString.Buffer
+.text:00000001400011EB
+.text:00000001400011EB loc_1400011EB:                          ; CODE XREF: sub_1400011B4+56↓j
+.text:00000001400011EB                 cmp     dword ptr [rbx-20h], 28h ; '('
+.text:00000001400011EF                 jnz     short loc_140001219
+.text:00000001400011F1                 mov     rax, [rbx]
+.text:00000001400011F4                 test    rax, rax
+.text:00000001400011F7                 jz      short loc_1400011FF
+.text:00000001400011F9                 call    rax
+.text:00000001400011FB                 mov     [rbx-8], rax
+.text:00000001400011FF
+.text:00000001400011FF loc_1400011FF:                          ; CODE XREF: sub_1400011B4+43↑j
+.text:00000001400011FF                 add     rbx, 28h ; '('
+.text:0000000140001203                 lea     rax, [rbx-20h]
+.text:0000000140001207                 cmp     rax, rdi
+.text:000000014000120A                 jb      short loc_1400011EB
+.text:000000014000120C
+.text:000000014000120C loc_14000120C:                          ; CODE XREF: sub_1400011B4+2E↑j
+.text:000000014000120C                 xor     eax, eax
+.text:000000014000120E
+.text:000000014000120E loc_14000120E:                          ; CODE XREF: sub_1400011B4+22↑j
+.text:000000014000120E                                         ; sub_1400011B4+6A↓j
+.text:000000014000120E                 mov     rbx, [rsp+28h+arg_0]
+.text:0000000140001213                 add     rsp, 20h
+.text:0000000140001217                 pop     rdi
+.text:0000000140001218                 retn
+.text:0000000140001219 ; ---------------------------------------------------------------------------
+.text:0000000140001219
+.text:0000000140001219 loc_140001219:                          ; CODE XREF: sub_1400011B4+3B↑j
+.text:0000000140001219                 mov     eax, 0C0000004h
+.text:000000014000121E                 jmp     short loc_14000120E
+.text:000000014000121E sub_1400011B4   endp
+.text:000000014000121E
+.text:0000000140001220
+.text:0000000140001220 ; =============== S U B R O U T I N E =======================================
+.text:0000000140001220
+.text:0000000140001220
+.text:0000000140001220 sub_140001220   proc near               ; CODE XREF: DriverEntry+98↑p
+.text:0000000140001220                                         ; DATA XREF: .pdata:0000000140004030↓o ...
+.text:0000000140001220
+.text:0000000140001220 arg_0           = qword ptr  8
+.text:0000000140001220 arg_8           = qword ptr  10h
+.text:0000000140001220
+.text:0000000140001220                 mov     [rsp+arg_0], rbx
+.text:0000000140001225                 mov     [rsp+arg_8], rsi
+.text:000000014000122A                 push    rdi
+.text:000000014000122B                 sub     rsp, 20h
+.text:000000014000122F                 mov     rdi, rcx
+.text:0000000140001232                 lea     rsi, unk_140003080
+.text:0000000140001239                 lea     rcx, unk_140003070
+.text:0000000140001240                 xor     eax, eax
+.text:0000000140001242                 cmp     rcx, rsi
+.text:0000000140001245                 jbe     short loc_14000124E
+.text:0000000140001247                 mov     eax, 0C000007Bh
+.text:000000014000124C                 jmp     short loc_1400012A8
+.text:000000014000124E ; ---------------------------------------------------------------------------
+.text:000000014000124E
+.text:000000014000124E loc_14000124E:                          ; CODE XREF: sub_140001220+25↑j
+.text:000000014000124E                 lea     rbx, unk_140003080
+.text:0000000140001255
+.text:0000000140001255 loc_140001255:                          ; CODE XREF: sub_140001220+81↓j
+.text:0000000140001255                 cmp     rbx, rsi
+.text:0000000140001258                 jnb     short loc_1400012A8
+.text:000000014000125A                 cmp     dword ptr [rbx], 50h ; 'P'
+.text:000000014000125D                 jnz     short loc_1400012A3
+.text:000000014000125F                 mov     rax, [rbx+38h]
+.text:0000000140001263                 mov     cs:off_140003088, rbx
+.text:000000014000126A                 test    rax, rax
+.text:000000014000126D                 jz      short loc_140001287
+.text:000000014000126F                 mov     r8, cs:qword_1400030D0
+.text:0000000140001276                 lea     rcx, WdfVersionBindClass
+.text:000000014000127D                 mov     r9, rbx
+.text:0000000140001280                 mov     rdx, rdi
+.text:0000000140001283                 call    rax
+.text:0000000140001285                 jmp     short loc_140001299
+.text:0000000140001287 ; ---------------------------------------------------------------------------
+.text:0000000140001287
+.text:0000000140001287 loc_140001287:                          ; CODE XREF: sub_140001220+4D↑j
+.text:0000000140001287                 mov     rdx, cs:qword_1400030D0
+.text:000000014000128E                 mov     r8, rbx
+.text:0000000140001291                 mov     rcx, rdi
+.text:0000000140001294                 call    WdfVersionBindClass
+.text:0000000140001299
+.text:0000000140001299 loc_140001299:                          ; CODE XREF: sub_140001220+65↑j
+.text:0000000140001299                 test    eax, eax
+.text:000000014000129B                 js      short loc_1400012A8
+.text:000000014000129D                 add     rbx, 50h ; 'P'
+.text:00000001400012A1                 jmp     short loc_140001255
+.text:00000001400012A3 ; ---------------------------------------------------------------------------
+.text:00000001400012A3
+.text:00000001400012A3 loc_1400012A3:                          ; CODE XREF: sub_140001220+3D↑j
+.text:00000001400012A3                 mov     eax, 0C0000004h
+.text:00000001400012A8
+.text:00000001400012A8 loc_1400012A8:                          ; CODE XREF: sub_140001220+2C↑j
+.text:00000001400012A8                                         ; sub_140001220+38↑j ...
+.text:00000001400012A8                 mov     rbx, [rsp+28h+arg_0]
+.text:00000001400012AD                 mov     rsi, [rsp+28h+arg_8]
+.text:00000001400012B2                 add     rsp, 20h
+.text:00000001400012B6                 pop     rdi
+.text:00000001400012B7                 retn
+.text:00000001400012B7 sub_140001220   endp
+.text:00000001400012B7
+.text:00000001400012B8
+.text:00000001400012B8 ; =============== S U B R O U T I N E =======================================
+.text:00000001400012B8
+.text:00000001400012B8
+.text:00000001400012B8 sub_1400012B8   proc near               ; CODE XREF: sub_140001000+B↑p
+.text:00000001400012B8                                         ; DATA XREF: .pdata:000000014000403C↓o ...
+.text:00000001400012B8
+.text:00000001400012B8 arg_0           = qword ptr  8
+.text:00000001400012B8
+.text:00000001400012B8                 mov     [rsp+arg_0], rbx
+.text:00000001400012BD                 push    rdi
+.text:00000001400012BE                 sub     rsp, 20h
+.text:00000001400012C2                 mov     rax, cs:off_140003088
+.text:00000001400012C9                 lea     rbx, unk_140003080
+.text:00000001400012D0                 mov     rdi, rcx
+.text:00000001400012D3                 lea     rcx, unk_140003070
+.text:00000001400012DA                 cmp     rax, rcx
+.text:00000001400012DD                 jz      short loc_140001324
+.text:00000001400012DF                 cmp     rbx, rax
+.text:00000001400012E2                 ja      short loc_140001324
+.text:00000001400012E4
+.text:00000001400012E4 loc_1400012E4:                          ; CODE XREF: sub_1400012B8+6A↓j
+.text:00000001400012E4                 mov     rax, [rbx+40h]
+.text:00000001400012E8                 test    rax, rax
+.text:00000001400012EB                 jz      short loc_140001305
+.text:00000001400012ED                 mov     r8, cs:qword_1400030D0
+.text:00000001400012F4                 lea     rcx, WdfVersionUnbindClass
+.text:00000001400012FB                 mov     r9, rbx
+.text:00000001400012FE                 mov     rdx, rdi
+.text:0000000140001301                 call    rax
+.text:0000000140001303                 jmp     short loc_140001317
+.text:0000000140001305 ; ---------------------------------------------------------------------------
+.text:0000000140001305
+.text:0000000140001305 loc_140001305:                          ; CODE XREF: sub_1400012B8+33↑j
+.text:0000000140001305                 mov     rdx, cs:qword_1400030D0
+.text:000000014000130C                 mov     r8, rbx
+.text:000000014000130F                 mov     rcx, rdi
+.text:0000000140001312                 call    WdfVersionUnbindClass
+.text:0000000140001317
+.text:0000000140001317 loc_140001317:                          ; CODE XREF: sub_1400012B8+4B↑j
+.text:0000000140001317                 add     rbx, 50h ; 'P'
+.text:000000014000131B                 cmp     rbx, cs:off_140003088
+.text:0000000140001322                 jbe     short loc_1400012E4
+.text:0000000140001324
+.text:0000000140001324 loc_140001324:                          ; CODE XREF: sub_1400012B8+25↑j
+.text:0000000140001324                                         ; sub_1400012B8+2A↑j
+.text:0000000140001324                 mov     rbx, [rsp+28h+arg_0]
+.text:0000000140001329                 add     rsp, 20h
+.text:000000014000132D                 pop     rdi
+.text:000000014000132E                 retn
+.text:000000014000132E sub_1400012B8   endp
+.text:000000014000132E
+.text:000000014000132F ; [00000006 BYTES: COLLAPSED FUNCTION WdfVersionBind. PRESS CTRL-NUMPAD+ TO EXPAND]
+.text:0000000140001335 ; [00000006 BYTES: COLLAPSED FUNCTION WdfVersionUnbind. PRESS CTRL-NUMPAD+ TO EXPAND]
+.text:000000014000133B ; [00000006 BYTES: COLLAPSED FUNCTION WdfVersionBindClass. PRESS CTRL-NUMPAD+ TO EXPAND]
+.text:0000000140001341 ; [00000006 BYTES: COLLAPSED FUNCTION WdfVersionUnbindClass. PRESS CTRL-NUMPAD+ TO EXPAND]
+.text:0000000140001347                 align 8
+.text:0000000140001348
+.idata:0000000140002000 ; _idata
+.idata:0000000140002000                 extrn __imp_WdfVersionBindClass:qword
+.idata:0000000140002000                                         ; DATA XREF: WdfVersionBindClass↑r
+.idata:0000000140002000                                         ; INIT:00000001400060C0↓o
+.idata:0000000140002008                 extrn __imp_WdfVersionBind:qword
+.idata:0000000140002008                                         ; DATA XREF: WdfVersionBind↑r
+.idata:0000000140002010                 extrn __imp_WdfVersionUnbind:qword
+.idata:0000000140002010                                         ; DATA XREF: WdfVersionUnbind↑r
+.idata:0000000140002018                 extrn __imp_WdfVersionUnbindClass:qword
+.idata:0000000140002018                                         ; DATA XREF: WdfVersionUnbindClass↑r
+.idata:0000000140002020
+.rdata:0000000140002090 ; Debug Directory entries
+.rdata:0000000140002090                 dd 0                    ; Characteristics
+.rdata:0000000140002094                 dd 59F100F0h            ; TimeDateStamp: Wed Oct 25 21:24:00 2017
+.rdata:0000000140002098                 dw 0                    ; MajorVersion
+.rdata:000000014000209A                 dw 0                    ; MinorVersion
+.rdata:000000014000209C                 dd 2                    ; Type: IMAGE_DEBUG_TYPE_CODEVIEW
+.rdata:00000001400020A0                 dd 83h                  ; SizeOfData
+.rdata:00000001400020A4                 dd rva asc_1400021D0    ; AddressOfRawData
+.rdata:00000001400020A8                 dd 0BD0h                ; PointerToRawData
+.rdata:00000001400020AC                 dd 0                    ; Characteristics
+.rdata:00000001400020B0                 dd 59F100F0h            ; TimeDateStamp: Wed Oct 25 21:24:00 2017
+.rdata:00000001400020B4                 dw 0                    ; MajorVersion
+.rdata:00000001400020B6                 dw 0                    ; MinorVersion
+.rdata:00000001400020B8                 dd 0Dh                  ; Type: IMAGE_DEBUG_TYPE_POGO
+.rdata:00000001400020BC                 dd 1E8h                 ; SizeOfData
+.rdata:00000001400020C0                 dd rva unk_140002254    ; AddressOfRawData
+.rdata:00000001400020C4                 dd 0C54h                ; PointerToRawData
+.rdata:00000001400020C8                 align 10h
+.rdata:00000001400020D0 _load_config_used dd 100h               ; Size
+.rdata:00000001400020D4                 dd 0                    ; Time stamp
+.rdata:00000001400020D8                 dw 2 dup(0)             ; Version: 0.0
+.rdata:00000001400020DC                 dd 0                    ; GlobalFlagsClear
+.rdata:00000001400020E0                 dd 0                    ; GlobalFlagsSet
+.rdata:00000001400020E4                 dd 0                    ; CriticalSectionDefaultTimeout
+.rdata:00000001400020E8                 dq 0                    ; DeCommitFreeBlockThreshold
+.rdata:00000001400020F0                 dq 0                    ; DeCommitTotalFreeThreshold
+.rdata:00000001400020F8                 dq 0                    ; LockPrefixTable
+.rdata:0000000140002100                 dq 0                    ; MaximumAllocationSize
+.rdata:0000000140002108                 dq 0                    ; VirtualMemoryThreshold
+.rdata:0000000140002110                 dq 0                    ; ProcessAffinityMask
+.rdata:0000000140002118                 dd 0                    ; ProcessHeapFlags
+.rdata:000000014000211C                 dw 0                    ; CSDVersion
+.rdata:000000014000211E                 dw 0                    ; Reserved1
+.rdata:0000000140002120                 dq 0                    ; EditList
+.rdata:0000000140002128                 dq offset __security_cookie ; SecurityCookie
+.rdata:0000000140002130                 dq 0                    ; SEHandlerTable
+.rdata:0000000140002138                 dq 0                    ; SEHandlerCount
+.rdata:0000000140002140                 dq offset __guard_check_icall_fptr ; GuardCFCheckFunctionPointer
+.rdata:0000000140002148                 dq offset __guard_dispatch_icall_fptr ; GuardCFDispatchFunctionPointer
+.rdata:0000000140002150                 dq 0                    ; GuardCFFunctionTable
+.rdata:0000000140002158                 dq 0                    ; GuardCFFunctionCount
+.rdata:0000000140002160                 dd 100h                 ; GuardFlags
+.rdata:0000000140002164                 dw 0                    ; CodeIntegrity.Flags
+.rdata:0000000140002166                 dw 0                    ; CodeIntegrity.Catalog
+.rdata:0000000140002168                 dd 0                    ; CodeIntegrity.CatalogOffset
+.rdata:000000014000216C                 dd 0                    ; CodeIntegrity.Reserved
+.rdata:0000000140002170                 dq 0                    ; GuardAddressTakenIatEntryTable
+.rdata:0000000140002178                 dq 0                    ; GuardAddressTakenIatEntryCount
+.rdata:0000000140002180                 dq 0                    ; GuardLongJumpTargetTable
+.rdata:0000000140002188                 dq 0                    ; GuardLongJumpTargetCount
+.rdata:0000000140002190                 dq 0                    ; DynamicValueRelocTable
+.rdata:0000000140002198                 dq 0                    ; CHPEMetadataPointer
+.rdata:00000001400021A0                 dq 0                    ; GuardRFFailureRoutine
+.rdata:00000001400021A8                 dq 0                    ; GuardRFFailureRoutineFunctionPointer
+.rdata:00000001400021B0                 dd 0                    ; DynamicValueRelocTableOffset
+.rdata:00000001400021B4                 dw 0                    ; DynamicValueRelocTableSection
+.rdata:00000001400021B6                 dw 0                    ; Reserved2
+.rdata:00000001400021B8                 dq 0                    ; GuardRFVerifyStackPointerFunctionPointer
+.rdata:00000001400021C0                 dd 0                    ; HotPatchTableOffset
+.rdata:00000001400021C4                 dd 0                    ; Reserved3
+.rdata:00000001400021C8                 dq 0                    ; EnclaveConfigurationPointer
+.rdata:00000001400021D0 ; Debug information (IMAGE_DEBUG_TYPE_CODEVIEW)
+.rdata:00000001400021D0 asc_1400021D0   db 'RSDS'               ; DATA XREF: .rdata:00000001400020A4↑o
+.rdata:00000001400021D0                                         ; CV signature
+.rdata:00000001400021D4                 GUID <5B9766D8h, 6844h, 47ACh, <0ABh, 55h, 53h, 95h, 2Ch, 9Bh, 0E5h, \ ; GUID
+.rdata:00000001400021D4                       0BCh>>
+.rdata:00000001400021E4                 dd 1                    ; Age
+.rdata:00000001400021E8                 text "UTF-8", 'C:\projects\Glide_GitHub\ISEN\HSA\win-drv-hpomencustom' ; PdbFileName
+.rdata:000000014000221E                 text "UTF-8", 'capdriver_temp\x64\Release\hpomencustomcapdriver.pdb',0
+.rdata:0000000140002253                 align 4
+.rdata:0000000140002254 ; Debug information (IMAGE_DEBUG_TYPE_POGO)
+.rdata:0000000140002254 unk_140002254   db    0                 ; DATA XREF: .rdata:00000001400020C0↑o
+.data:00000001400030B8 ; struct _UNICODE_STRING DestinationString
+.data:00000001400030B8 DestinationString _UNICODE_STRING <0>   ; DATA XREF: sub_140001000+1E↑o
+.data:00000001400030B8                                         ; DriverEntry+39↑o ...
+.data:00000001400030C8 qword_1400030C8 dq 0                    ; DATA XREF: DriverEntry+D0↑r
+.data:00000001400030C8                                         ; DriverEntry+DE↑w ...
+.data:00000001400030D0 qword_1400030D0 dq 0                    ; DATA XREF: sub_140001000+10↑r
+.data:00000001400030D0                                         ; DriverEntry+57↑o ...
+.data:00000001400030D8 qword_1400030D8 dq 0                    ; DATA XREF: DriverEntry+7C↑r
+.data:00000001400030D8                                         ; .data:0000000140003050↑o ...
+.data:00000001400030E0 qword_1400030E0 dq 0                    ; DATA XREF: DriverEntry:loc_140001087↑w
+.data:00000001400030E8 qword_1400030E8 dq 0                    ; DATA XREF: DriverEntry+91↑w
+.data:00000001400030E8                                         ; DriverEntry+100↑w
+.data:00000001400030F0 unk_1400030F0   db    0                 ; DATA XREF: DriverEntry+32↑o
+.pdata:0000000140004000 ; ===========================================================================
+.pdata:0000000140004000
+.pdata:0000000140004000 ; Segment type: Pure data
+.pdata:0000000140004000 ; Segment permissions: Read
+.pdata:0000000140004000 _pdata          segment para public 'DATA' use64
+.pdata:0000000140004000                 assume cs:_pdata
+.pdata:0000000140004000                 ;org 140004000h
+.pdata:0000000140004000 ExceptionDir    RUNTIME_FUNCTION <rva sub_140001000, rva algn_14000102E, \
+.pdata:0000000140004000                                   rva stru_1400024AC>
+.pdata:000000014000400C                 RUNTIME_FUNCTION <rva start, rva algn_14000105A, rva stru_14000249C>
+.pdata:0000000140004018                 RUNTIME_FUNCTION <rva DriverEntry, rva algn_140001183, \
+.pdata:0000000140004018                                   rva stru_140002484>
+.pdata:0000000140004024                 RUNTIME_FUNCTION <rva sub_14000118C, rva algn_1400011B3, \
+.pdata:0000000140004024                                   rva stru_1400024AC>
+.pdata:0000000140004030                 RUNTIME_FUNCTION <rva sub_1400011B4, rva sub_140001220, \
+.pdata:0000000140004030                                   rva stru_1400024B8>
+.pdata:000000014000403C                 RUNTIME_FUNCTION <rva sub_140001220, rva sub_1400012B8, \
+.pdata:000000014000403C                                   rva stru_14000246C>
+.pdata:0000000140004048                 RUNTIME_FUNCTION <rva sub_1400012B8, rva WdfVersionBind, \
+.pdata:0000000140004048                                   rva stru_1400024C8>
+INIT:0000000140006000
+INIT:0000000140006000 ; =============== S U B R O U T I N E =======================================
+INIT:0000000140006000
+INIT:0000000140006000
+INIT:0000000140006000 sub_140006000   proc near               ; CODE XREF: DriverEntry+21↑p
+INIT:0000000140006000                                         ; DriverEntry+B4↑p
+INIT:00000001400060
+INIT:000000014000606B sub_140006000   endp
+INIT:000000014000606B
+INIT:000000014000606C ; [0000002D BYTES: COLLAPSED FUNCTION __security_init_cookie. PRESS CTRL-NUMPAD+ TO EXPAND]
+INIT:0000000140006099                 align 4
+INIT:000000014000609C __IMPORT_DESCRIPTOR_ntoskrnl_exe dd rva off_140006100 ; Import Name Table
+INIT:00000001400060A0                 dd 0                    ; Time stamp
+INIT:00000001400060A4                 dd 0                    ; Forwarder Chain
+INIT:00000001400060A8                 dd rva aNtoskrnlExe     ; DLL Name
+INIT:00000001400060AC                 dd rva RtlCopyUnicodeString ; Import Address Table
+INIT:00000001400060B0 __IMPORT_DESCRIPTOR_WDFLDR_SYS dd rva off_1400060D8 ; Import Name Table
+INIT:00000001400060B4                 dd 0                    ; Time stamp
+INIT:00000001400060B8                 dd 0                    ; Forwarder Chain
+INIT:00000001400060BC                 dd rva aWdfldrSys       ; DLL Name
+INIT:00000001400060C0                 dd rva __imp_WdfVersionBindClass ; Import Address Table
+INIT:00000001400060C4                 align 8
+INIT:000000014000
+INIT:0000000140006100 ;
+INIT:0000000140006100 ; Import names for ntoskrnl.exe
+INIT:0000000140006100 ;
+INIT:0000000140006100 off_140006100   dq rva word_140006110   ; DATA XREF: INIT:__IMPORT_DESCRIPTOR_ntoskrnl_exe↑o
+INIT:0000000140006108                 dq 0
+INIT:0000000140006110 word_140006110  dw 746h                 ; DATA XREF: INIT:off_140006100↑o
+INIT:0000000140006112                 db 'RtlCopyUnicodeString',0
+INIT:0000000140006127                 align 8
+INIT:0000000140006128 aNtoskrnlExe    db 'ntoskrnl.exe',0     ; DATA XREF: INIT:00000001400060A8↑o
+INIT:0000000140006135                 align 2
+INIT:0000000140006136 word_140006136  dw 6                    ; DATA XREF: INIT:00000001400060E0↑o
+INIT:0000000140006138                 db 'WdfVersionBind',0
+INIT:0000000140006147                 align 8
+INIT:0000000140006148 word_140006148  dw 8                    ; DATA XREF: INIT:00000001400060E8↑o
+INIT:000000014000614A                 db 'WdfVersionUnbind',0
+INIT:000000014000615B                 align 4
+INIT:000000014000615C word_14000615C  dw 7                    ; DATA XREF: INIT:off_1400060D8↑o
+INIT:000000014000615E                 db 'WdfVersionBindClass',0
+INIT:0000000140006172 word_140006172  dw 9                    ; DATA XREF: INIT:00000001400060F0↑o
+INIT:0000000140006174                 db 'WdfVersionUnbindClass',0
+INIT:000000014000618A aWdfldrSys      db 'WDFLDR.SYS',0       ; DATA XREF: INIT:00000001400060BC↑o
