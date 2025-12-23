@@ -2,8 +2,8 @@
 Linux kernel driver for HP Omen RGB keyboard - Mainline goal
 CURRENTLY İN REVERSE ENGİNEERİNG!
 
-Sorry, I don't have all the architecture and driver plans because I messed up the header structure of the encrypted disk with Veracrypt. 
-Actually, I'm not sure. 
+I'm finally back, I'm still actively trying new ways every day.
+
 
 Big Breakthrough!
 
@@ -12,13 +12,17 @@ Full architecture:
 App (HP Omen Lighting Service / UI)
 
    ↓
-OmenSDK.dll  (user‑mode API)
+WMI suspicion and pipe and Something strange happened, I learned a lot from the log file, the RGB change does not go directly to the hardware. 
+UI → Named Pipe (CommandsServerIPC) → a one-stop point ACPI/WMI → background service. i
+This means that: UI (WPF / Aurora layer) Sends command via Named Pipe The pipe name is dynamic but the pattern is fixed.
 
-   ↓
-WMI or DeviceIoControl
+Aurora.dll (effects / bitmap)
+             ↓ 
+Named Pipe (CommandsServerIPC) 
+             ↓
+Omen Lighting Service (background) 
 
-   ↓
-OMENLighting.sys (kernel driver)
+But I searched for piped and couldn't find it, so I focused on the service part.
 
    ↓
 ACPI → EC write
@@ -27,7 +31,7 @@ ACPI → EC write
 Keyboard / RGB MCU
 
 
-Note: Reverse engineering is finished for the minimum limited features. I'm going crazy with Linux user space virtual drive issues. I want this whole project to work on both the Victus and Omen series, or in general, on every device that runs Omen Light Studio. I'll also write a simple user space tool for testing purposes, but the main purpose is the kernel. I'll leave an advanced API for the user space. The program has an extremely complex flow.
+Note: Reverse engineering is NOT finished for the minimum limited features. I'm going crazy with Linux user space virtual drive issues. I want this whole project to work on both the Victus and Omen series, or in general, on every device that runs Omen Light Studio. I'll also write a simple user space tool for testing purposes, but the main purpose is the kernel. I'll leave an advanced API for the user space. The program has an extremely complex flow.
 
 
 
