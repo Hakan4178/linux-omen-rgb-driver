@@ -1,0 +1,1599 @@
+[INFO] 2025-12-23 16:29:14.389: [OLS_BG] OnStartup(), version = 1.0.64.0
+[INFO] 2025-12-23 16:29:14.607: IsPrivilegeNeeded(), platform = Bigred
+[INFO] 2025-12-23 16:29:14.777: _connectedDevices is null
+[INFO] 2025-12-23 16:29:14.890: enter RefreshWithSharedConfigs()
+[INFO] 2025-12-23 16:29:14.890: data is not null
+[INFO] 2025-12-23 16:29:14.890: leave RefreshWithSharedConfigs()
+[INFO] 2025-12-23 16:29:14.890: enter RefreshWithNGSharedConfigs()
+[INFO] 2025-12-23 16:29:14.962: leave RefreshWithNGSharedConfigs()
+[INFO] 2025-12-23 16:29:14.962: RegisterContentChangedEvent()
+[INFO] 2025-12-23 16:29:14.962: CheckPlatformDevice()
+[INFO] 2025-12-23 16:29:14.962: kbType = OneZoneWithNumpad
+[INFO] 2025-12-23 16:29:15.001: enter RefreshWithSharedConfigs()
+[INFO] 2025-12-23 16:29:15.001: data is not null
+[INFO] 2025-12-23 16:29:15.001: leave RefreshWithSharedConfigs()
+[INFO] 2025-12-23 16:29:15.001: Aurora.Effects, LoadSettings(), settingsType = Aurora.Configs.EffectSettings
+[INFO] 2025-12-23 16:29:15.073: Loading Configuration
+[INFO] 2025-12-23 16:29:15.144: Loading Plugins
+[INFO] 2025-12-23 16:29:15.144: Aurora.Settings.PluginManager, LoadSettings(), settingsType = Aurora.Settings.PluginManagerSettings
+[INFO] 2025-12-23 16:29:15.158: Loading KB Layouts
+[ERROR] 2025-12-23 16:29:15.579: 'System.Windows.StaticResourceExtension'   esinde de er sa lama i lemi  zel durum d nd rd .
+[INFO] 2025-12-23 16:29:15.579: Loading Input Hooking
+[INFO] 2025-12-23 16:29:15.630: Loading Applications
+[INFO] 2025-12-23 16:29:15.682: Aurora.Profiles.LightingStateManager, LoadSettings(), settingsType = Aurora.Profiles.ProfilesManagerSettings
+[INFO] 2025-12-23 16:29:15.694: LoadSettings(), settingsType = Aurora.Settings.ApplicationSettings
+[INFO] 2025-12-23 16:29:15.694: Aurora.Profiles.Desktop.Desktop, LoadSettings(), settingsType = Aurora.Settings.ApplicationSettings
+[INFO] 2025-12-23 16:29:15.705: LoadProfiles(), profilesPath = C:\Users\hberk\AppData\Roaming\LightStudio\Profiles\desktop
+[INFO] 2025-12-23 16:29:15.705: profile: C:\Users\hberk\AppData\Roaming\LightStudio\Profiles\desktop\default.json
+[INFO] 2025-12-23 16:29:15.705: LoadProfile()
+[INFO] 2025-12-23 16:29:15.705: path=C:\Users\hberk\AppData\Roaming\LightStudio\Profiles\desktop\default.json
+[INFO] 2025-12-23 16:29:15.783: InitialiseLayerCollection()
+[INFO] 2025-12-23 16:29:15.783: InitialiseLayerCollection()
+[INFO] 2025-12-23 16:29:15.783: profile: C:\Users\hberk\AppData\Roaming\LightStudio\Profiles\desktop\settings.json
+[INFO] 2025-12-23 16:29:15.783: SettingsSavePath = C:\Users\hberk\AppData\Roaming\LightStudio\Profiles\desktop\settings.json
+[INFO] 2025-12-23 16:29:15.783: Aurora.Profiles.Desktop.Desktop, SaveSettings(), settingsType = Aurora.Settings.ApplicationSettings
+[INFO] 2025-12-23 16:29:15.783: Aurora.Profiles.Desktop.Desktop, SaveSettings(), WriteAllText(), SettingsSavePath=C:\Users\hberk\AppData\Roaming\LightStudio\Profiles\desktop\settings.json
+[INFO] 2025-12-23 16:29:15.810: Starting windowsLighting_listener
+[INFO] 2025-12-23 16:29:15.816: [CommandsServerIPC] Pipe created 28589617
+[INFO] 2025-12-23 16:29:15.816: WindowsLightingHelper: Get int Initialize
+[INFO] 2025-12-23 16:29:15.816: WindowsLightingHelper: start Initialize
+[INFO] 2025-12-23 16:29:15.960: WindowsLightingHelper Global AmbientLightingEnabled value: HKEY_CURRENT_USER\Software\Microsoft\Lighting
+    AmbientLightingEnabled    REG_DWORD    0x1
+[INFO] 2025-12-23 16:29:15.960: WindowsLightingHelper: End Initialize
+[INFO] 2025-12-23 16:29:15.960: Starting hue_listener
+[INFO] 2025-12-23 16:29:15.960: Starting twinkly_listener
+[INFO] 2025-12-23 16:29:15.960: [CommandsServerIPC] Pipe created 55198763
+[INFO] 2025-12-23 16:29:15.960: Loading Device Manager
+[INFO] 2025-12-23 16:29:15.960: [CommandsServerIPC] Pipe created 64219123
+[INFO] 2025-12-23 16:29:15.960: kbType = OneZoneWithNumpad
+[INFO] 2025-12-23 16:29:16.324: IsWDLEnabled, _windowsLightingEnabled = False, _windowsLightingEnabledGlobal = True
+[INFO] 2025-12-23 16:29:16.328: Device, OMEN:, was initialized
+[ERROR] 2025-12-23 16:29:16.454: Razer device, Exception! Message:System.AggregateException: Bir veya daha fazla hata olu tu. ---> Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()
+   ---     zel durum y   n  izlemesinin sonu ---
+   konum: System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   konum: Aurora.Devices.Razer.RazerDevice.Initialize()
+---> (    zel Durum #0) Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()<---
+
+[INFO] 2025-12-23 16:29:16.454: Device, Razer, was not initialized
+[INFO] 2025-12-23 16:29:16.454: Loading LGS DLL
+[ERROR] 2025-12-23 16:29:16.474: Logitech LED SDK could not be initialized. (LogiLedSetTargetDevice or LogiLedSaveCurrentLighting failed)
+[INFO] 2025-12-23 16:29:16.474: Device, Logitech, was not initialized
+[INFO] 2025-12-23 16:29:16.558: Device, Philips Hue:, was initialized
+[INFO] 2025-12-23 16:29:16.570: Device, Twinkly:, was initialized
+[INFO] 2025-12-23 16:29:16.570: Device, HyperX:, was initialized
+[INFO] 2025-12-23 16:29:16.570: Device, WindowsLighting:, was initialized
+[INFO] 2025-12-23 16:29:16.570: Starting GameStateListener
+[INFO] 2025-12-23 16:29:16.582: Retrying Device Initialization
+[ERROR] 2025-12-23 16:29:16.582: Razer device, Exception! Message:System.AggregateException: Bir veya daha fazla hata olu tu. ---> Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()
+   ---     zel durum y   n  izlemesinin sonu ---
+   konum: System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   konum: Aurora.Devices.Razer.RazerDevice.Initialize()
+---> (    zel Durum #0) Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()<---
+
+[INFO] 2025-12-23 16:29:16.582: Device, Razer, was not initialized
+[ERROR] 2025-12-23 16:29:16.582: Logitech LED SDK could not be initialized. (LogiLedSetTargetDevice or LogiLedSaveCurrentLighting failed)
+[INFO] 2025-12-23 16:29:16.582: Device, Logitech, was not initialized
+[INFO] 2025-12-23 16:29:16.582: [TwinklyGen2Devices] MonitorTask: Begin
+[INFO] 2025-12-23 16:29:16.582: [TwinklyGen2Devices] MonitorTask: Get groups from registry...
+[INFO] 2025-12-23 16:29:16.582: [TwinklyGen2Devices] MonitorTask: No uuid registry key
+[INFO] 2025-12-23 16:29:16.582: [TwinklyGen2Devices] MonitorTask: End
+[INFO] 2025-12-23 16:29:16.599: Listening for game integration calls...
+[INFO] 2025-12-23 16:29:16.599: [CommandsServerIPC] Pipe created 22724141
+[INFO] 2025-12-23 16:29:16.599: HueDevices.MonitorTask: Begin
+[INFO] 2025-12-23 16:29:16.599: HueDevices.MonitorTask: No bridge registry key
+[INFO] 2025-12-23 16:29:16.599: HueDevices.MonitorTask: End
+[INFO] 2025-12-23 16:29:16.807: [ResetProfile] to no user login default profile
+[INFO] 2025-12-23 16:29:16.815: [profile] GetAcitveProfileThroughAppService() : GetLoginStatus(False) = UserId=, SelectedProfileId=00000000-0000-0000-0000-000000000000
+[INFO] 2025-12-23 16:29:16.905: [ResetProfile] Get in the function, user ID: , profile ID: 00000000-0000-0000-0000-000000000000, profile Name: , trigger function name: SwitchGameProfile
+[INFO] 2025-12-23 16:29:26.593: Retrying Device Initialization
+[ERROR] 2025-12-23 16:29:26.593: Razer device, Exception! Message:System.AggregateException: Bir veya daha fazla hata olu tu. ---> Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()
+   ---     zel durum y   n  izlemesinin sonu ---
+   konum: System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   konum: Aurora.Devices.Razer.RazerDevice.Initialize()
+---> (    zel Durum #0) Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()<---
+
+[INFO] 2025-12-23 16:29:26.593: Device, Razer, was not initialized
+[ERROR] 2025-12-23 16:29:26.593: Logitech LED SDK could not be initialized. (LogiLedSetTargetDevice or LogiLedSaveCurrentLighting failed)
+[INFO] 2025-12-23 16:29:26.593: Device, Logitech, was not initialized
+[INFO] 2025-12-23 16:29:36.603: Retrying Device Initialization
+[ERROR] 2025-12-23 16:29:36.603: Razer device, Exception! Message:System.AggregateException: Bir veya daha fazla hata olu tu. ---> Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()
+   ---     zel durum y   n  izlemesinin sonu ---
+   konum: System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   konum: Aurora.Devices.Razer.RazerDevice.Initialize()
+---> (    zel Durum #0) Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()<---
+
+[INFO] 2025-12-23 16:29:36.603: Device, Razer, was not initialized
+[ERROR] 2025-12-23 16:29:36.603: Logitech LED SDK could not be initialized. (LogiLedSetTargetDevice or LogiLedSaveCurrentLighting failed)
+[INFO] 2025-12-23 16:29:36.603: Device, Logitech, was not initialized
+[INFO] 2025-12-23 16:29:46.606: Retrying Device Initialization
+[ERROR] 2025-12-23 16:29:46.606: Razer device, Exception! Message:System.AggregateException: Bir veya daha fazla hata olu tu. ---> Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()
+   ---     zel durum y   n  izlemesinin sonu ---
+   konum: System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   konum: Aurora.Devices.Razer.RazerDevice.Initialize()
+---> (    zel Durum #0) Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()<---
+
+[INFO] 2025-12-23 16:29:46.606: Device, Razer, was not initialized
+[ERROR] 2025-12-23 16:29:46.606: Logitech LED SDK could not be initialized. (LogiLedSetTargetDevice or LogiLedSaveCurrentLighting failed)
+[INFO] 2025-12-23 16:29:46.606: Device, Logitech, was not initialized
+[INFO] 2025-12-23 16:29:56.612: Retrying Device Initialization
+[ERROR] 2025-12-23 16:29:56.612: Razer device, Exception! Message:System.AggregateException: Bir veya daha fazla hata olu tu. ---> Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()
+   ---     zel durum y   n  izlemesinin sonu ---
+   konum: System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   konum: Aurora.Devices.Razer.RazerDevice.Initialize()
+---> (    zel Durum #0) Colore.ColoreException: Failed to dynamically load Chroma SDK library (Error 126).
+   konum: Colore.Native.NativeSdkMethods..ctor()
+   konum: Colore.ColoreProvider.<CreateNativeAsync>d__2.MoveNext()<---
+
+[INFO] 2025-12-23 16:29:56.612: Device, Razer, was not initialized
+[ERROR] 2025-12-23 16:29:56.612: Logitech LED SDK could not be initialized. (LogiLedSetTargetDevice or LogiLedSaveCurrentLighting failed)
+[INFO] 2025-12-23 16:29:56.612: Device, Logitech, was not initialized
+[INFO] 2025-12-23 17:12:24.078: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:24.091: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:24.091: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:24.091: [CommandsServerIPC] Pipe created 6634750
+[INFO] 2025-12-23 17:12:24.665: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:24.691: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:12:24.691: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:12:24.692: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:24.692: [CommandsServerIPC] Pipe created 41669368
+[INFO] 2025-12-23 17:12:26.270: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:26.270: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:12:26.270: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:26.270: [CommandsServerIPC] Pipe created 45667280
+[INFO] 2025-12-23 17:12:26.288: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:26.304: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:12:26.304: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:26.304: [CommandsServerIPC] Pipe created 11677607
+[INFO] 2025-12-23 17:12:26.319: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:26.319: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:12:26.319: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:26.319: [CommandsServerIPC] Pipe created 64899704
+[INFO] 2025-12-23 17:12:40.823: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:40.823: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:12:40.823: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:12:40.823: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:40.823: [CommandsServerIPC] Pipe created 27637090
+[INFO] 2025-12-23 17:12:41.723: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:41.726: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:12:41.726: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:12:41.726: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:41.726: [CommandsServerIPC] Pipe created 59652897
+[INFO] 2025-12-23 17:12:43.233: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:43.233: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:12:43.233: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:12:43.233: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:43.233: [CommandsServerIPC] Pipe created 59714927
+[INFO] 2025-12-23 17:12:44.025: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:44.025: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:12:44.025: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:12:44.025: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:44.025: [CommandsServerIPC] Pipe created 66476185
+[INFO] 2025-12-23 17:12:44.932: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:44.932: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:44.932: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:44.932: [CommandsServerIPC] Pipe created 65255812
+[INFO] 2025-12-23 17:12:46.533: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.533: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.533: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.533: [CommandsServerIPC] Pipe created 66452830
+[INFO] 2025-12-23 17:12:46.564: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.564: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.564: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.564: [CommandsServerIPC] Pipe created 62710086
+[INFO] 2025-12-23 17:12:46.578: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.578: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.578: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.578: [CommandsServerIPC] Pipe created 57404190
+[INFO] 2025-12-23 17:12:46.597: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.597: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.597: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.597: [CommandsServerIPC] Pipe created 15932364
+[INFO] 2025-12-23 17:12:46.610: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.610: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.610: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.610: [CommandsServerIPC] Pipe created 58906166
+[INFO] 2025-12-23 17:12:46.627: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.627: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.627: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.627: [CommandsServerIPC] Pipe created 45430044
+[INFO] 2025-12-23 17:12:46.640: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.640: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.640: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.640: [CommandsServerIPC] Pipe created 52927797
+[INFO] 2025-12-23 17:12:46.656: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.656: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.656: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.656: [CommandsServerIPC] Pipe created 64876460
+[INFO] 2025-12-23 17:12:46.671: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.671: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.671: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.671: [CommandsServerIPC] Pipe created 25103448
+[INFO] 2025-12-23 17:12:46.687: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.687: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.687: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.687: [CommandsServerIPC] Pipe created 51921377
+[INFO] 2025-12-23 17:12:46.703: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.703: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.703: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.703: [CommandsServerIPC] Pipe created 22285583
+[INFO] 2025-12-23 17:12:46.719: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.719: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.719: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.719: [CommandsServerIPC] Pipe created 13209490
+[INFO] 2025-12-23 17:12:46.735: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.735: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.735: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.735: [CommandsServerIPC] Pipe created 30548342
+[INFO] 2025-12-23 17:12:46.750: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.750: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.750: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.750: [CommandsServerIPC] Pipe created 41435013
+[INFO] 2025-12-23 17:12:46.766: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.766: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.766: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.766: [CommandsServerIPC] Pipe created 20122588
+[INFO] 2025-12-23 17:12:46.782: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.782: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.782: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.782: [CommandsServerIPC] Pipe created 45878512
+[INFO] 2025-12-23 17:12:46.799: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.799: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.799: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.799: [CommandsServerIPC] Pipe created 34701887
+[INFO] 2025-12-23 17:12:46.813: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.813: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.813: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.813: [CommandsServerIPC] Pipe created 24409336
+[INFO] 2025-12-23 17:12:46.828: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.828: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.828: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.828: [CommandsServerIPC] Pipe created 43371980
+[INFO] 2025-12-23 17:12:46.844: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.844: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.844: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.844: [CommandsServerIPC] Pipe created 29925428
+[INFO] 2025-12-23 17:12:46.861: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.861: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.861: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.861: [CommandsServerIPC] Pipe created 40646243
+[INFO] 2025-12-23 17:12:46.877: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.877: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.877: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.877: [CommandsServerIPC] Pipe created 1255466
+[INFO] 2025-12-23 17:12:46.893: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.893: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.893: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.893: [CommandsServerIPC] Pipe created 2628112
+[INFO] 2025-12-23 17:12:46.908: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.908: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.908: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.908: [CommandsServerIPC] Pipe created 18028752
+[INFO] 2025-12-23 17:12:46.924: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.924: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.924: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.924: [CommandsServerIPC] Pipe created 18976913
+[INFO] 2025-12-23 17:12:46.940: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.940: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.940: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.940: [CommandsServerIPC] Pipe created 55217675
+[INFO] 2025-12-23 17:12:46.956: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.956: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.956: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.956: [CommandsServerIPC] Pipe created 46037718
+[INFO] 2025-12-23 17:12:46.971: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.971: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.971: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.971: [CommandsServerIPC] Pipe created 52055346
+[INFO] 2025-12-23 17:12:46.992: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.992: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.992: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.992: [CommandsServerIPC] Pipe created 36888187
+[INFO] 2025-12-23 17:12:46.992: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:46.992: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:46.992: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:46.992: [CommandsServerIPC] Pipe created 61389451
+[INFO] 2025-12-23 17:12:47.018: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.018: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.018: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.018: [CommandsServerIPC] Pipe created 47672655
+[INFO] 2025-12-23 17:12:47.034: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.034: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.034: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.034: [CommandsServerIPC] Pipe created 28936907
+[INFO] 2025-12-23 17:12:47.049: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.049: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.049: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.049: [CommandsServerIPC] Pipe created 6352
+[INFO] 2025-12-23 17:12:47.065: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.065: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.065: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.065: [CommandsServerIPC] Pipe created 692378
+[INFO] 2025-12-23 17:12:47.081: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.081: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.081: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.081: [CommandsServerIPC] Pipe created 8360363
+[INFO] 2025-12-23 17:12:47.096: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.096: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.096: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.096: [CommandsServerIPC] Pipe created 38864396
+[INFO] 2025-12-23 17:12:47.112: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.112: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.112: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.112: [CommandsServerIPC] Pipe created 8360767
+[INFO] 2025-12-23 17:12:47.127: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.127: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.127: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.127: [CommandsServerIPC] Pipe created 38908456
+[INFO] 2025-12-23 17:12:47.142: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.142: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.142: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.142: [CommandsServerIPC] Pipe created 13163290
+[INFO] 2025-12-23 17:12:47.158: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.158: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.158: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.158: [CommandsServerIPC] Pipe created 25512547
+[INFO] 2025-12-23 17:12:47.174: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.174: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.174: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.174: [CommandsServerIPC] Pipe created 29404282
+[INFO] 2025-12-23 17:12:47.190: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.190: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.190: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.190: [CommandsServerIPC] Pipe created 50950181
+[INFO] 2025-12-23 17:12:47.207: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.207: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.207: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.207: [CommandsServerIPC] Pipe created 50642892
+[INFO] 2025-12-23 17:12:47.222: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.222: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.222: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.222: [CommandsServerIPC] Pipe created 17148482
+[INFO] 2025-12-23 17:12:47.238: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.238: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.238: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.238: [CommandsServerIPC] Pipe created 57245232
+[INFO] 2025-12-23 17:12:47.254: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.254: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.254: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.254: [CommandsServerIPC] Pipe created 65714817
+[INFO] 2025-12-23 17:12:47.269: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.269: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.269: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.269: [CommandsServerIPC] Pipe created 49375474
+[INFO] 2025-12-23 17:12:47.286: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.286: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.286: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.286: [CommandsServerIPC] Pipe created 13217559
+[INFO] 2025-12-23 17:12:47.301: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.301: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.301: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.301: [CommandsServerIPC] Pipe created 31427856
+[INFO] 2025-12-23 17:12:47.317: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.317: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.317: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.317: [CommandsServerIPC] Pipe created 3084331
+[INFO] 2025-12-23 17:12:47.333: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.333: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.333: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.333: [CommandsServerIPC] Pipe created 647866
+[INFO] 2025-12-23 17:12:47.349: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.349: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.349: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.349: [CommandsServerIPC] Pipe created 3508564
+[INFO] 2025-12-23 17:12:47.364: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.364: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.364: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.364: [CommandsServerIPC] Pipe created 46889164
+[INFO] 2025-12-23 17:12:47.380: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.380: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.380: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.380: [CommandsServerIPC] Pipe created 10645269
+[INFO] 2025-12-23 17:12:47.395: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.395: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.395: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.395: [CommandsServerIPC] Pipe created 19483733
+[INFO] 2025-12-23 17:12:47.411: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.411: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.411: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.411: [CommandsServerIPC] Pipe created 43352167
+[INFO] 2025-12-23 17:12:47.427: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.427: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.427: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.427: [CommandsServerIPC] Pipe created 27765779
+[INFO] 2025-12-23 17:12:47.442: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.442: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.442: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.442: [CommandsServerIPC] Pipe created 6571054
+[INFO] 2025-12-23 17:12:47.458: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.458: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.458: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.458: [CommandsServerIPC] Pipe created 45156339
+[INFO] 2025-12-23 17:12:47.474: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.474: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.474: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.474: [CommandsServerIPC] Pipe created 23093953
+[INFO] 2025-12-23 17:12:47.489: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.489: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.489: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.489: [CommandsServerIPC] Pipe created 34213012
+[INFO] 2025-12-23 17:12:47.505: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.505: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.505: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.505: [CommandsServerIPC] Pipe created 38230886
+[INFO] 2025-12-23 17:12:47.521: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.521: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.521: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.521: [CommandsServerIPC] Pipe created 6417092
+[INFO] 2025-12-23 17:12:47.537: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.537: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.537: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.537: [CommandsServerIPC] Pipe created 28374483
+[INFO] 2025-12-23 17:12:47.552: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.552: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.552: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.552: [CommandsServerIPC] Pipe created 5810945
+[INFO] 2025-12-23 17:12:47.567: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.567: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.567: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.567: [CommandsServerIPC] Pipe created 29413293
+[INFO] 2025-12-23 17:12:47.583: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.583: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.583: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.583: [CommandsServerIPC] Pipe created 51932409
+[INFO] 2025-12-23 17:12:47.599: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.599: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.599: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.599: [CommandsServerIPC] Pipe created 23488011
+[INFO] 2025-12-23 17:12:47.615: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.615: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.615: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.615: [CommandsServerIPC] Pipe created 10056457
+[INFO] 2025-12-23 17:12:47.630: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.630: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.630: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.630: [CommandsServerIPC] Pipe created 22412019
+[INFO] 2025-12-23 17:12:47.646: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.646: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.646: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.646: [CommandsServerIPC] Pipe created 26991040
+[INFO] 2025-12-23 17:12:47.662: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.662: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.662: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.662: [CommandsServerIPC] Pipe created 56342235
+[INFO] 2025-12-23 17:12:47.678: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.678: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.680: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.680: [CommandsServerIPC] Pipe created 34397019
+[INFO] 2025-12-23 17:12:47.680: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.680: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.680: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.680: [CommandsServerIPC] Pipe created 58287656
+[INFO] 2025-12-23 17:12:47.709: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.709: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.709: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.709: [CommandsServerIPC] Pipe created 45121354
+[INFO] 2025-12-23 17:12:47.725: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:47.725: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:47.725: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:47.725: [CommandsServerIPC] Pipe created 19280561
+[INFO] 2025-12-23 17:12:49.083: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.083: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.083: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.083: [CommandsServerIPC] Pipe created 21206441
+[INFO] 2025-12-23 17:12:49.109: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.109: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.109: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.109: [CommandsServerIPC] Pipe created 29800764
+[INFO] 2025-12-23 17:12:49.125: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.125: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.125: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.125: [CommandsServerIPC] Pipe created 27057863
+[INFO] 2025-12-23 17:12:49.141: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.141: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.141: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.141: [CommandsServerIPC] Pipe created 63625983
+[INFO] 2025-12-23 17:12:49.156: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.156: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.156: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.156: [CommandsServerIPC] Pipe created 23019170
+[INFO] 2025-12-23 17:12:49.172: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.172: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.172: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.172: [CommandsServerIPC] Pipe created 26061599
+[INFO] 2025-12-23 17:12:49.188: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.188: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.188: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.188: [CommandsServerIPC] Pipe created 22142055
+[INFO] 2025-12-23 17:12:49.204: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.204: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.204: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.204: [CommandsServerIPC] Pipe created 64673843
+[INFO] 2025-12-23 17:12:49.220: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.220: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.220: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.220: [CommandsServerIPC] Pipe created 3018230
+[INFO] 2025-12-23 17:12:49.234: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.234: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.234: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.234: [CommandsServerIPC] Pipe created 60551617
+[INFO] 2025-12-23 17:12:49.250: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.250: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.250: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.250: [CommandsServerIPC] Pipe created 23457627
+[INFO] 2025-12-23 17:12:49.275: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.275: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.275: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.275: [CommandsServerIPC] Pipe created 6744511
+[INFO] 2025-12-23 17:12:49.297: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.297: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.297: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.297: [CommandsServerIPC] Pipe created 64063060
+[INFO] 2025-12-23 17:12:49.313: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.313: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.313: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.313: [CommandsServerIPC] Pipe created 3551762
+[INFO] 2025-12-23 17:12:49.329: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.329: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.329: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.329: [CommandsServerIPC] Pipe created 51597777
+[INFO] 2025-12-23 17:12:49.345: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.345: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.345: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.345: [CommandsServerIPC] Pipe created 54122001
+[INFO] 2025-12-23 17:12:49.361: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.361: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.361: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.361: [CommandsServerIPC] Pipe created 60826990
+[INFO] 2025-12-23 17:12:49.376: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.376: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.376: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.376: [CommandsServerIPC] Pipe created 53473282
+[INFO] 2025-12-23 17:12:49.392: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.392: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.392: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.392: [CommandsServerIPC] Pipe created 57225466
+[INFO] 2025-12-23 17:12:49.409: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.409: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.409: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.409: [CommandsServerIPC] Pipe created 63560346
+[INFO] 2025-12-23 17:12:49.424: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.424: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.424: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.424: [CommandsServerIPC] Pipe created 15864819
+[INFO] 2025-12-23 17:12:49.440: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.440: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.440: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.440: [CommandsServerIPC] Pipe created 51543681
+[INFO] 2025-12-23 17:12:49.455: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.455: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.455: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.455: [CommandsServerIPC] Pipe created 48225542
+[INFO] 2025-12-23 17:12:49.471: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.471: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.471: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.471: [CommandsServerIPC] Pipe created 22092747
+[INFO] 2025-12-23 17:12:49.487: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.487: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.487: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.487: [CommandsServerIPC] Pipe created 59299218
+[INFO] 2025-12-23 17:12:49.503: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.503: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.503: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.503: [CommandsServerIPC] Pipe created 21163903
+[INFO] 2025-12-23 17:12:49.518: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.518: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.518: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.518: [CommandsServerIPC] Pipe created 25164069
+[INFO] 2025-12-23 17:12:49.534: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.534: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.534: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.534: [CommandsServerIPC] Pipe created 58529042
+[INFO] 2025-12-23 17:12:49.549: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.549: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.549: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.549: [CommandsServerIPC] Pipe created 4323581
+[INFO] 2025-12-23 17:12:49.564: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.564: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.564: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.564: [CommandsServerIPC] Pipe created 1508332
+[INFO] 2025-12-23 17:12:49.580: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.580: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.580: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.580: [CommandsServerIPC] Pipe created 30190471
+[INFO] 2025-12-23 17:12:49.595: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.595: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.595: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.595: [CommandsServerIPC] Pipe created 2427105
+[INFO] 2025-12-23 17:12:49.611: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.611: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.611: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.611: [CommandsServerIPC] Pipe created 63227875
+[INFO] 2025-12-23 17:12:49.627: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.627: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.627: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.627: [CommandsServerIPC] Pipe created 46734264
+[INFO] 2025-12-23 17:12:49.642: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.642: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.642: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.642: [CommandsServerIPC] Pipe created 60869981
+[INFO] 2025-12-23 17:12:49.833: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.833: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.833: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.833: [CommandsServerIPC] Pipe created 58159270
+[INFO] 2025-12-23 17:12:49.847: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.847: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.847: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.847: [CommandsServerIPC] Pipe created 31127283
+[INFO] 2025-12-23 17:12:49.863: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.863: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.863: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.863: [CommandsServerIPC] Pipe created 37430738
+[INFO] 2025-12-23 17:12:49.879: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.879: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.879: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.879: [CommandsServerIPC] Pipe created 53418709
+[INFO] 2025-12-23 17:12:49.894: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.894: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.894: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.894: [CommandsServerIPC] Pipe created 51277011
+[INFO] 2025-12-23 17:12:49.910: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.910: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.910: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.910: [CommandsServerIPC] Pipe created 19158495
+[INFO] 2025-12-23 17:12:49.926: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.926: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.926: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.926: [CommandsServerIPC] Pipe created 7901228
+[INFO] 2025-12-23 17:12:49.941: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.941: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.941: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.941: [CommandsServerIPC] Pipe created 55927584
+[INFO] 2025-12-23 17:12:49.957: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.957: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.957: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.957: [CommandsServerIPC] Pipe created 56308950
+[INFO] 2025-12-23 17:12:49.972: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.972: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.972: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.972: [CommandsServerIPC] Pipe created 30768982
+[INFO] 2025-12-23 17:12:49.988: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.994: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.994: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.994: [CommandsServerIPC] Pipe created 65484725
+[INFO] 2025-12-23 17:12:49.994: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:49.994: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:49.994: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:49.994: [CommandsServerIPC] Pipe created 24295534
+[INFO] 2025-12-23 17:12:50.020: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.020: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.020: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.020: [CommandsServerIPC] Pipe created 30967584
+[INFO] 2025-12-23 17:12:50.035: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.035: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.035: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.035: [CommandsServerIPC] Pipe created 20023559
+[INFO] 2025-12-23 17:12:50.051: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.051: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.051: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.051: [CommandsServerIPC] Pipe created 35084381
+[INFO] 2025-12-23 17:12:50.067: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.067: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.067: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.067: [CommandsServerIPC] Pipe created 66101231
+[INFO] 2025-12-23 17:12:50.083: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.083: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.083: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.083: [CommandsServerIPC] Pipe created 24385826
+[INFO] 2025-12-23 17:12:50.098: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.098: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.098: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.098: [CommandsServerIPC] Pipe created 40809380
+[INFO] 2025-12-23 17:12:50.113: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.113: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.113: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.113: [CommandsServerIPC] Pipe created 19037460
+[INFO] 2025-12-23 17:12:50.130: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.130: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.130: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.130: [CommandsServerIPC] Pipe created 61817300
+[INFO] 2025-12-23 17:12:50.584: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.584: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.584: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.584: [CommandsServerIPC] Pipe created 27199306
+[INFO] 2025-12-23 17:12:50.595: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.595: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.595: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.595: [CommandsServerIPC] Pipe created 11934428
+[INFO] 2025-12-23 17:12:50.611: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.611: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.611: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.611: [CommandsServerIPC] Pipe created 25784266
+[INFO] 2025-12-23 17:12:50.627: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.627: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.627: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.627: [CommandsServerIPC] Pipe created 59021643
+[INFO] 2025-12-23 17:12:50.643: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.643: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.643: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.643: [CommandsServerIPC] Pipe created 58017034
+[INFO] 2025-12-23 17:12:50.658: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.658: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.658: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.658: [CommandsServerIPC] Pipe created 15623518
+[INFO] 2025-12-23 17:12:50.675: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.675: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.675: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.675: [CommandsServerIPC] Pipe created 25241967
+[INFO] 2025-12-23 17:12:50.691: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.691: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.691: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.691: [CommandsServerIPC] Pipe created 67019909
+[INFO] 2025-12-23 17:12:50.706: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.706: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.706: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.706: [CommandsServerIPC] Pipe created 57412816
+[INFO] 2025-12-23 17:12:50.721: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.721: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.721: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.721: [CommandsServerIPC] Pipe created 16872668
+[INFO] 2025-12-23 17:12:50.736: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.736: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.736: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.736: [CommandsServerIPC] Pipe created 27181555
+[INFO] 2025-12-23 17:12:50.751: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.751: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.751: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.751: [CommandsServerIPC] Pipe created 9999538
+[INFO] 2025-12-23 17:12:50.766: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.766: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.766: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.766: [CommandsServerIPC] Pipe created 16207886
+[INFO] 2025-12-23 17:12:50.781: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.781: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.781: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.781: [CommandsServerIPC] Pipe created 21829125
+[INFO] 2025-12-23 17:12:50.798: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.798: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.798: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.798: [CommandsServerIPC] Pipe created 30564422
+[INFO] 2025-12-23 17:12:50.813: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.813: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.813: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.813: [CommandsServerIPC] Pipe created 43187714
+[INFO] 2025-12-23 17:12:50.828: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.828: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.828: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.828: [CommandsServerIPC] Pipe created 9840434
+[INFO] 2025-12-23 17:12:50.844: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.844: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.844: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.844: [CommandsServerIPC] Pipe created 65974409
+[INFO] 2025-12-23 17:12:50.861: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.861: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.861: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.861: [CommandsServerIPC] Pipe created 10562136
+[INFO] 2025-12-23 17:12:50.877: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.877: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.877: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.877: [CommandsServerIPC] Pipe created 10422182
+[INFO] 2025-12-23 17:12:50.892: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.892: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.892: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.892: [CommandsServerIPC] Pipe created 62276014
+[INFO] 2025-12-23 17:12:50.907: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.907: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.907: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.907: [CommandsServerIPC] Pipe created 10090263
+[INFO] 2025-12-23 17:12:50.923: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.923: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.923: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.923: [CommandsServerIPC] Pipe created 26096921
+[INFO] 2025-12-23 17:12:50.939: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.939: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.939: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.939: [CommandsServerIPC] Pipe created 25992140
+[INFO] 2025-12-23 17:12:50.955: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.955: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.955: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.955: [CommandsServerIPC] Pipe created 14570992
+[INFO] 2025-12-23 17:12:50.970: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.970: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.970: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.970: [CommandsServerIPC] Pipe created 44734305
+[INFO] 2025-12-23 17:12:50.985: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:50.985: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:50.985: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:50.985: [CommandsServerIPC] Pipe created 44201081
+[INFO] 2025-12-23 17:12:51.005: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.005: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.005: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.005: [CommandsServerIPC] Pipe created 53188517
+[INFO] 2025-12-23 17:12:51.016: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.016: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.016: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.016: [CommandsServerIPC] Pipe created 26186089
+[INFO] 2025-12-23 17:12:51.032: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.032: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.032: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.032: [CommandsServerIPC] Pipe created 35711510
+[INFO] 2025-12-23 17:12:51.048: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.048: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.048: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.048: [CommandsServerIPC] Pipe created 240488
+[INFO] 2025-12-23 17:12:51.064: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.064: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.064: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.064: [CommandsServerIPC] Pipe created 26213217
+[INFO] 2025-12-23 17:12:51.080: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.080: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.080: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.080: [CommandsServerIPC] Pipe created 38668426
+[INFO] 2025-12-23 17:12:51.095: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.095: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.095: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.095: [CommandsServerIPC] Pipe created 54108901
+[INFO] 2025-12-23 17:12:51.111: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.111: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.111: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.111: [CommandsServerIPC] Pipe created 59399126
+[INFO] 2025-12-23 17:12:51.125: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.125: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.125: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.125: [CommandsServerIPC] Pipe created 32053808
+[INFO] 2025-12-23 17:12:51.140: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.140: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.140: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.140: [CommandsServerIPC] Pipe created 4204225
+[INFO] 2025-12-23 17:12:51.157: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.157: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.157: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.157: [CommandsServerIPC] Pipe created 55607424
+[INFO] 2025-12-23 17:12:51.172: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.172: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.172: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.172: [CommandsServerIPC] Pipe created 21411507
+[INFO] 2025-12-23 17:12:51.188: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.188: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.188: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.188: [CommandsServerIPC] Pipe created 52152898
+[INFO] 2025-12-23 17:12:51.204: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.204: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.204: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.204: [CommandsServerIPC] Pipe created 47521408
+[INFO] 2025-12-23 17:12:51.220: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.220: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.220: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.220: [CommandsServerIPC] Pipe created 12450966
+[INFO] 2025-12-23 17:12:51.236: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.236: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.236: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.236: [CommandsServerIPC] Pipe created 14978031
+[INFO] 2025-12-23 17:12:51.251: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.251: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.251: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.251: [CommandsServerIPC] Pipe created 21992648
+[INFO] 2025-12-23 17:12:51.267: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:12:51.267: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:12:51.267: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:12:51.267: [CommandsServerIPC] Pipe created 48388405
+[INFO] 2025-12-23 17:13:56.164: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:13:56.164: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:13:56.164: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:13:56.164: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:13:56.164: [CommandsServerIPC] Pipe created 39844822
+[INFO] 2025-12-23 17:13:57.560: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:13:57.560: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:13:57.560: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:13:57.560: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:13:57.560: [CommandsServerIPC] Pipe created 48118393
+[INFO] 2025-12-23 17:14:09.700: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.711: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.711: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.711: [CommandsServerIPC] Pipe created 10413552
+[INFO] 2025-12-23 17:14:09.711: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.711: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.711: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.711: [CommandsServerIPC] Pipe created 61335378
+[INFO] 2025-12-23 17:14:09.734: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.734: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.734: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.734: [CommandsServerIPC] Pipe created 41778674
+[INFO] 2025-12-23 17:14:09.749: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.749: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.749: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.749: [CommandsServerIPC] Pipe created 57581635
+[INFO] 2025-12-23 17:14:09.765: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.765: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.765: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.765: [CommandsServerIPC] Pipe created 35273963
+[INFO] 2025-12-23 17:14:09.781: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.781: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.781: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.781: [CommandsServerIPC] Pipe created 19656773
+[INFO] 2025-12-23 17:14:09.796: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.796: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.796: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.796: [CommandsServerIPC] Pipe created 62213529
+[INFO] 2025-12-23 17:14:09.812: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.812: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.812: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.812: [CommandsServerIPC] Pipe created 3279420
+[INFO] 2025-12-23 17:14:09.827: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.827: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.827: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.827: [CommandsServerIPC] Pipe created 21912553
+[INFO] 2025-12-23 17:14:09.843: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.843: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.843: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.843: [CommandsServerIPC] Pipe created 39658111
+[INFO] 2025-12-23 17:14:09.858: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.858: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.858: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.858: [CommandsServerIPC] Pipe created 27766906
+[INFO] 2025-12-23 17:14:09.874: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.874: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.874: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.874: [CommandsServerIPC] Pipe created 6693972
+[INFO] 2025-12-23 17:14:09.889: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.889: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.889: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.889: [CommandsServerIPC] Pipe created 58554394
+[INFO] 2025-12-23 17:14:09.905: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.905: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.905: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.905: [CommandsServerIPC] Pipe created 7086961
+[INFO] 2025-12-23 17:14:09.920: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.920: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.920: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.920: [CommandsServerIPC] Pipe created 34281287
+[INFO] 2025-12-23 17:14:09.935: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.935: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.935: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.935: [CommandsServerIPC] Pipe created 45672827
+[INFO] 2025-12-23 17:14:09.951: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.951: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.951: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.951: [CommandsServerIPC] Pipe created 12282287
+[INFO] 2025-12-23 17:14:09.967: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.967: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.967: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.967: [CommandsServerIPC] Pipe created 63700873
+[INFO] 2025-12-23 17:14:09.982: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.982: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.982: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.982: [CommandsServerIPC] Pipe created 31182255
+[INFO] 2025-12-23 17:14:09.998: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:09.998: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:09.998: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:09.998: [CommandsServerIPC] Pipe created 43422625
+[INFO] 2025-12-23 17:14:10.013: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.013: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.013: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.013: [CommandsServerIPC] Pipe created 35445718
+[INFO] 2025-12-23 17:14:10.028: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.028: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.028: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.028: [CommandsServerIPC] Pipe created 38378041
+[INFO] 2025-12-23 17:14:10.044: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.044: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.044: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.044: [CommandsServerIPC] Pipe created 22456929
+[INFO] 2025-12-23 17:14:10.059: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.059: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.059: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.059: [CommandsServerIPC] Pipe created 31886262
+[INFO] 2025-12-23 17:14:10.075: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.075: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.075: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.075: [CommandsServerIPC] Pipe created 53050560
+[INFO] 2025-12-23 17:14:10.090: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.090: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.090: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.090: [CommandsServerIPC] Pipe created 11148783
+[INFO] 2025-12-23 17:14:10.106: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.106: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.106: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.106: [CommandsServerIPC] Pipe created 7257871
+[INFO] 2025-12-23 17:14:10.121: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.121: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.121: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.121: [CommandsServerIPC] Pipe created 52910506
+[INFO] 2025-12-23 17:14:10.137: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.137: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.137: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.137: [CommandsServerIPC] Pipe created 62991773
+[INFO] 2025-12-23 17:14:10.152: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.152: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.152: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.152: [CommandsServerIPC] Pipe created 20999197
+[INFO] 2025-12-23 17:14:10.167: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.167: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.167: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.167: [CommandsServerIPC] Pipe created 7211112
+[INFO] 2025-12-23 17:14:10.183: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.183: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.183: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.183: [CommandsServerIPC] Pipe created 47813741
+[INFO] 2025-12-23 17:14:10.199: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.199: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.199: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.199: [CommandsServerIPC] Pipe created 44315293
+[INFO] 2025-12-23 17:14:10.214: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.214: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.214: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.214: [CommandsServerIPC] Pipe created 65637681
+[INFO] 2025-12-23 17:14:10.230: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.230: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.230: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.230: [CommandsServerIPC] Pipe created 40967708
+[INFO] 2025-12-23 17:14:10.245: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.245: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.245: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.245: [CommandsServerIPC] Pipe created 36295151
+[INFO] 2025-12-23 17:14:10.261: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.261: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.261: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.261: [CommandsServerIPC] Pipe created 63857393
+[INFO] 2025-12-23 17:14:10.276: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.276: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.276: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.276: [CommandsServerIPC] Pipe created 48242845
+[INFO] 2025-12-23 17:14:10.292: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.292: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.292: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.292: [CommandsServerIPC] Pipe created 23978714
+[INFO] 2025-12-23 17:14:10.308: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.308: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.308: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.308: [CommandsServerIPC] Pipe created 63543072
+[INFO] 2025-12-23 17:14:10.324: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.324: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.324: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.324: [CommandsServerIPC] Pipe created 13981895
+[INFO] 2025-12-23 17:14:10.339: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.339: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.339: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.339: [CommandsServerIPC] Pipe created 47631567
+[INFO] 2025-12-23 17:14:10.355: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.355: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.355: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.355: [CommandsServerIPC] Pipe created 24458324
+[INFO] 2025-12-23 17:14:10.370: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.370: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.370: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.370: [CommandsServerIPC] Pipe created 48711664
+[INFO] 2025-12-23 17:14:10.386: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.386: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.386: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.386: [CommandsServerIPC] Pipe created 7971152
+[INFO] 2025-12-23 17:14:10.402: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.402: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.402: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.402: [CommandsServerIPC] Pipe created 63549240
+[INFO] 2025-12-23 17:14:10.418: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.418: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.418: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.418: [CommandsServerIPC] Pipe created 14654265
+[INFO] 2025-12-23 17:14:10.943: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.943: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.943: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.943: [CommandsServerIPC] Pipe created 53811023
+[INFO] 2025-12-23 17:14:10.966: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.966: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.966: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.966: [CommandsServerIPC] Pipe created 26930364
+[INFO] 2025-12-23 17:14:10.981: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.981: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.981: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.981: [CommandsServerIPC] Pipe created 49728585
+[INFO] 2025-12-23 17:14:10.997: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:10.997: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:10.997: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:10.997: [CommandsServerIPC] Pipe created 51706680
+[INFO] 2025-12-23 17:14:11.013: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:11.013: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:11.013: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:11.013: [CommandsServerIPC] Pipe created 65992493
+[INFO] 2025-12-23 17:14:11.028: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:11.028: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:11.028: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:11.028: [CommandsServerIPC] Pipe created 12533307
+[INFO] 2025-12-23 17:14:11.044: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:11.044: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:11.044: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:11.044: [CommandsServerIPC] Pipe created 23953264
+[INFO] 2025-12-23 17:14:11.059: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:11.059: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:11.059: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:11.059: [CommandsServerIPC] Pipe created 60769027
+[INFO] 2025-12-23 17:14:11.076: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:11.076: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:11.076: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:11.076: [CommandsServerIPC] Pipe created 47155322
+[INFO] 2025-12-23 17:14:11.091: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:11.091: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:14:11.091: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:11.091: [CommandsServerIPC] Pipe created 39656445
+[INFO] 2025-12-23 17:14:15.001: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:15.001: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:14:15.001: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:14:15.001: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:15.004: [CommandsServerIPC] Pipe created 27585311
+[INFO] 2025-12-23 17:14:15.910: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:14:15.918: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:14:15.918: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:14:15.918: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:14:15.918: [CommandsServerIPC] Pipe created 54008905
+[INFO] 2025-12-23 17:15:29.170: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:15:29.179: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:15:29.179: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:15:29.179: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:15:29.179: [CommandsServerIPC] Pipe created 48499494
+[INFO] 2025-12-23 17:15:30.104: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:15:30.104: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:15:30.104: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:15:30.104: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:15:30.104: [CommandsServerIPC] Pipe created 51953459
+[INFO] 2025-12-23 17:15:55.478: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:15:55.478: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:15:55.478: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:15:55.478: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:15:55.478: [CommandsServerIPC] Pipe created 25782468
+[INFO] 2025-12-23 17:15:56.150: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:15:56.150: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:15:56.150: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:15:56.150: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:15:56.150: [CommandsServerIPC] Pipe created 58825657
+[INFO] 2025-12-23 17:16:05.042: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:16:05.042: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:16:05.042: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:16:05.042: [CommandsServerIPC] Pipe created 36654624
+[INFO] 2025-12-23 17:16:05.447: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:16:05.447: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:16:05.447: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:16:05.447: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:16:05.447: [CommandsServerIPC] Pipe created 35931147
+[INFO] 2025-12-23 17:16:06.511: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:16:06.511: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:16:06.511: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:16:06.511: [CommandsServerIPC] Pipe created 24180945
+[INFO] 2025-12-23 17:16:06.533: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:16:06.536: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:16:06.536: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:16:06.536: [CommandsServerIPC] Pipe created 18477317
+[INFO] 2025-12-23 17:16:06.536: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:16:06.536: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:16:06.536: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:16:06.536: [CommandsServerIPC] Pipe created 761690
+[INFO] 2025-12-23 17:17:15.400: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:17:15.408: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:17:15.408: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:17:15.408: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:17:15.408: [CommandsServerIPC] Pipe created 15915446
+[INFO] 2025-12-23 17:17:16.383: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:17:16.383: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:17:16.383: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:17:16.383: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:17:16.383: [CommandsServerIPC] Pipe created 57062068
+[INFO] 2025-12-23 17:23:58.046: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:23:58.054: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:23:58.054: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:23:58.054: [CommandsServerIPC] Pipe created 45749980
+[INFO] 2025-12-23 17:23:58.428: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:23:58.428: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:23:58.428: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:23:58.428: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:23:58.428: [CommandsServerIPC] Pipe created 20691907
+[INFO] 2025-12-23 17:24:00.455: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:00.455: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:24:00.455: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:00.455: [CommandsServerIPC] Pipe created 40825444
+[INFO] 2025-12-23 17:24:00.478: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:00.478: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:24:00.478: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:00.478: [CommandsServerIPC] Pipe created 20788446
+[INFO] 2025-12-23 17:24:00.494: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:00.494: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:24:00.494: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:00.494: [CommandsServerIPC] Pipe created 51348205
+[INFO] 2025-12-23 17:24:04.069: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:04.069: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:04.069: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:04.069: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:04.069: [CommandsServerIPC] Pipe created 26918731
+[INFO] 2025-12-23 17:24:05.076: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:05.076: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:05.076: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:05.076: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:05.076: [CommandsServerIPC] Pipe created 48460613
+[INFO] 2025-12-23 17:24:11.975: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:11.975: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:11.975: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:11.975: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:11.975: [CommandsServerIPC] Pipe created 47715520
+[INFO] 2025-12-23 17:24:12.744: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:12.744: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:12.744: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:12.744: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:12.744: [CommandsServerIPC] Pipe created 33609194
+[INFO] 2025-12-23 17:24:40.565: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:40.574: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:40.574: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:40.574: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:40.574: [CommandsServerIPC] Pipe created 39523554
+[INFO] 2025-12-23 17:24:41.301: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:41.301: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:41.301: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:41.301: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:41.301: [CommandsServerIPC] Pipe created 13100170
+[INFO] 2025-12-23 17:24:55.759: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:55.769: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:55.769: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:55.769: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:55.769: [CommandsServerIPC] Pipe created 18632392
+[INFO] 2025-12-23 17:24:56.395: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:24:56.395: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:24:56.395: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:24:56.395: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:24:56.395: [CommandsServerIPC] Pipe created 17664898
+[INFO] 2025-12-23 17:25:09.876: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:09.876: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:25:09.876: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:25:09.876: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:09.876: [CommandsServerIPC] Pipe created 46425720
+[INFO] 2025-12-23 17:25:10.541: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:10.541: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:25:10.541: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:25:10.541: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:10.541: [CommandsServerIPC] Pipe created 27238753
+[INFO] 2025-12-23 17:25:19.209: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:19.218: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:25:19.218: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:19.218: [CommandsServerIPC] Pipe created 16234088
+[INFO] 2025-12-23 17:25:19.637: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:19.647: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:25:19.647: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:25:19.647: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:19.647: [CommandsServerIPC] Pipe created 24685156
+[INFO] 2025-12-23 17:25:21.882: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:21.882: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:25:21.882: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:21.882: [CommandsServerIPC] Pipe created 6327549
+[INFO] 2025-12-23 17:25:21.916: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:21.916: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:25:21.916: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:21.916: [CommandsServerIPC] Pipe created 18614267
+[INFO] 2025-12-23 17:25:21.939: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:21.939: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:25:21.939: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:21.939: [CommandsServerIPC] Pipe created 15689230
+[INFO] 2025-12-23 17:25:38.888: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:38.897: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:25:38.897: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:38.897: [CommandsServerIPC] Pipe created 32404546
+[INFO] 2025-12-23 17:25:39.324: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:39.335: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:25:39.335: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:25:39.335: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:39.335: [CommandsServerIPC] Pipe created 42434657
+[INFO] 2025-12-23 17:25:41.114: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:41.114: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:25:41.114: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:41.114: [CommandsServerIPC] Pipe created 61974920
+[INFO] 2025-12-23 17:25:41.133: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:41.133: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:25:41.133: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:41.133: [CommandsServerIPC] Pipe created 44379948
+[INFO] 2025-12-23 17:25:41.148: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:41.148: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:25:41.148: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:41.148: [CommandsServerIPC] Pipe created 5576139
+[INFO] 2025-12-23 17:25:43.902: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:43.902: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:25:43.902: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:25:43.902: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:43.902: [CommandsServerIPC] Pipe created 3819412
+[INFO] 2025-12-23 17:25:44.571: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:44.571: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:25:44.571: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:25:44.571: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:44.571: [CommandsServerIPC] Pipe created 13662776
+[INFO] 2025-12-23 17:25:58.593: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:58.602: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:25:58.602: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:58.602: [CommandsServerIPC] Pipe created 12847664
+[INFO] 2025-12-23 17:25:59.086: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:25:59.098: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:25:59.098: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:25:59.098: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:25:59.098: [CommandsServerIPC] Pipe created 58218159
+[INFO] 2025-12-23 17:26:00.503: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:26:00.503: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:26:00.504: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:26:00.504: [CommandsServerIPC] Pipe created 37546118
+[INFO] 2025-12-23 17:26:00.504: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:26:00.522: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:26:00.522: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:26:00.522: [CommandsServerIPC] Pipe created 65995068
+[INFO] 2025-12-23 17:26:00.522: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:26:00.522: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:26:00.522: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:26:00.522: [CommandsServerIPC] Pipe created 12813964
+[INFO] 2025-12-23 17:26:43.957: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:26:43.969: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:26:43.969: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:26:43.969: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:26:43.969: [CommandsServerIPC] Pipe created 54544797
+[INFO] 2025-12-23 17:26:44.572: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:26:44.572: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:26:44.572: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:26:44.572: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:26:44.572: [CommandsServerIPC] Pipe created 39802919
+[INFO] 2025-12-23 17:26:59.623: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:26:59.623: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:26:59.623: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:26:59.623: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:26:59.623: [CommandsServerIPC] Pipe created 43550914
+[INFO] 2025-12-23 17:27:00.417: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:27:00.417: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:27:00.417: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:27:00.417: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:27:00.417: [CommandsServerIPC] Pipe created 49429166
+[INFO] 2025-12-23 17:27:35.316: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:27:35.316: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:27:35.316: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:27:35.316: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:27:35.316: [CommandsServerIPC] Pipe created 19070023
+[INFO] 2025-12-23 17:27:36.037: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:27:36.037: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:27:36.037: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:27:36.037: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:27:36.037: [CommandsServerIPC] Pipe created 65366631
+[INFO] 2025-12-23 17:28:10.497: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:28:10.506: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:28:10.506: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:28:10.506: [CommandsServerIPC] Pipe created 11423227
+[INFO] 2025-12-23 17:28:10.880: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:28:10.880: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:28:10.880: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:28:10.880: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:28:10.880: [CommandsServerIPC] Pipe created 37172231
+[INFO] 2025-12-23 17:28:12.351: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:28:12.351: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:28:12.351: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:28:12.351: [CommandsServerIPC] Pipe created 25241436
+[INFO] 2025-12-23 17:28:12.368: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:28:12.368: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:28:12.368: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:28:12.368: [CommandsServerIPC] Pipe created 66961974
+[INFO] 2025-12-23 17:28:12.383: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:28:12.383: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:28:12.383: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:28:12.383: [CommandsServerIPC] Pipe created 51097879
+[INFO] 2025-12-23 17:29:19.654: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:29:19.654: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:29:19.654: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:29:19.654: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:29:19.654: [CommandsServerIPC] Pipe created 66742024
+[INFO] 2025-12-23 17:33:55.697: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:33:55.705: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:33:55.705: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:33:55.705: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:33:55.705: [CommandsServerIPC] Pipe created 27123339
+[INFO] 2025-12-23 17:52:31.649: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:31.649: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:31.649: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:31.649: [CommandsServerIPC] Pipe created 3654020
+[INFO] 2025-12-23 17:52:32.058: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:32.058: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:52:32.058: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:52:32.058: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:32.058: [CommandsServerIPC] Pipe created 62743878
+[INFO] 2025-12-23 17:52:32.918: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:32.918: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:52:32.918: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:32.918: [CommandsServerIPC] Pipe created 61087519
+[INFO] 2025-12-23 17:52:32.937: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:32.937: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:52:32.937: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:32.937: [CommandsServerIPC] Pipe created 14762118
+[INFO] 2025-12-23 17:52:32.952: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:32.952: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:52:32.952: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:32.952: [CommandsServerIPC] Pipe created 65567041
+[INFO] 2025-12-23 17:52:39.475: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:39.475: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:39.475: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:39.475: [CommandsServerIPC] Pipe created 33267896
+[INFO] 2025-12-23 17:52:39.514: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:39.514: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:39.514: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:39.514: [CommandsServerIPC] Pipe created 2322110
+[INFO] 2025-12-23 17:52:39.540: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:39.540: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:39.540: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:39.540: [CommandsServerIPC] Pipe created 51783420
+[INFO] 2025-12-23 17:52:39.602: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:39.602: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:39.602: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:39.602: [CommandsServerIPC] Pipe created 7248221
+[INFO] 2025-12-23 17:52:39.684: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:39.684: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:39.684: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:39.684: [CommandsServerIPC] Pipe created 51858590
+[INFO] 2025-12-23 17:52:41.637: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:41.637: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:41.637: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:41.637: [CommandsServerIPC] Pipe created 15441747
+[INFO] 2025-12-23 17:52:41.651: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:41.651: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:41.651: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:41.651: [CommandsServerIPC] Pipe created 5428892
+[INFO] 2025-12-23 17:52:41.667: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:41.667: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:41.667: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:41.667: [CommandsServerIPC] Pipe created 54878407
+[INFO] 2025-12-23 17:52:41.683: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:52:41.683: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:52:41.683: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:52:41.683: [CommandsServerIPC] Pipe created 9057574
+[INFO] 2025-12-23 17:53:00.921: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:00.932: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:53:00.932: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:00.932: [CommandsServerIPC] Pipe created 47751504
+[INFO] 2025-12-23 17:53:01.343: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:01.354: NetworkListener_CommandRecieved(), config.Command = LayerUpdate
+[INFO] 2025-12-23 17:53:01.354: NetworkListener_CommandRecieved(), updatedLayer = New layer
+[INFO] 2025-12-23 17:53:01.354: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:01.354: [CommandsServerIPC] Pipe created 37531416
+[INFO] 2025-12-23 17:53:03.778: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:03.778: NetworkListener_CommandRecieved(), config.Command = EffectCanvasUpdate
+[INFO] 2025-12-23 17:53:03.778: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:03.778: [CommandsServerIPC] Pipe created 64392561
+[INFO] 2025-12-23 17:53:03.791: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:03.791: NetworkListener_CommandRecieved(), config.Command = BitmapUpdate
+[INFO] 2025-12-23 17:53:03.791: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:03.791: [CommandsServerIPC] Pipe created 39467393
+[INFO] 2025-12-23 17:53:03.820: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:03.820: NetworkListener_CommandRecieved(), config.Command = EffectGridUpdate
+[INFO] 2025-12-23 17:53:03.821: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:03.821: [CommandsServerIPC] Pipe created 6978595
+[INFO] 2025-12-23 17:53:07.809: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:07.809: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:53:07.809: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:07.809: [CommandsServerIPC] Pipe created 22469407
+[INFO] 2025-12-23 17:53:07.867: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:07.867: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:53:07.867: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:07.867: [CommandsServerIPC] Pipe created 33246282
+[INFO] 2025-12-23 17:53:07.906: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:07.906: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:53:07.906: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:07.906: [CommandsServerIPC] Pipe created 67075039
+[INFO] 2025-12-23 17:53:08.017: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:08.017: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:53:08.017: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:08.017: [CommandsServerIPC] Pipe created 63422013
+[INFO] 2025-12-23 17:53:15.100: [CommandsServerIPC] Pipe connection established
+[INFO] 2025-12-23 17:53:15.109: NetworkListener_CommandRecieved(), config.Command = BrightnessUpdate
+[INFO] 2025-12-23 17:53:15.109: [CommandsServerIPC] Pipe connection lost
+[INFO] 2025-12-23 17:53:15.109: [CommandsServerIPC] Pipe created 786528
+[ERROR] 2025-12-23 18:03:56.630: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(String name, Color color)
+   konum: Aurora.Effects.PushFrame(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:03:58.873: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: System.Drawing.Bitmap..ctor(Image original, Int32 width, Int32 height)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(EffectLayer another_layer)
+   konum: Aurora.EffectsEngine.EffectLayer.op_Addition(EffectLayer lhs, EffectLayer rhs)
+   konum: Aurora.Effects.PushFrame(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:03:59.895: ProfilesManager.Update() Exception, System.OutOfMemoryException: Bellek yetersiz.
+   konum: System.Drawing.Graphics.CheckErrorStatus(Int32 status)
+   konum: System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   konum: System.Drawing.Bitmap..ctor(Image original, Int32 width, Int32 height)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(EffectLayer another_layer)
+   konum: Aurora.Settings.Layers.LayerHandler`1.PostRenderFX(EffectLayer rendered_layer)
+   konum: Aurora.Settings.Layers.Layer.Render(IGameState gs)
+   konum: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   konum: System.Collections.Generic.Queue`1..ctor(IEnumerable`1 collection)
+   konum: Aurora.Profiles.Desktop.Event_Desktop.UpdateLights(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:00.962: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(String name, Color color)
+   konum: Aurora.Effects.PushFrame(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:01.968: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor()
+   konum: Aurora.Settings.Layers.SolidColorLayerHandler.Render(IGameState gamestate)
+   konum: Aurora.Settings.Layers.Layer.Render(IGameState gs)
+   konum: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   konum: System.Collections.Generic.Queue`1..ctor(IEnumerable`1 collection)
+   konum: Aurora.Profiles.Desktop.Event_Desktop.UpdateLights(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:04.629: ProfilesManager.Update() Exception, System.OutOfMemoryException: Bellek yetersiz.
+   konum: System.Drawing.Graphics.CheckErrorStatus(Int32 status)
+   konum: System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   konum: System.Drawing.Bitmap..ctor(Image original, Int32 width, Int32 height)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(EffectLayer another_layer)
+   konum: Aurora.EffectsEngine.EffectLayer.op_Addition(EffectLayer lhs, EffectLayer rhs)
+   konum: Aurora.Effects.PushFrame(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:05.693: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: System.Drawing.Bitmap..ctor(Image original, Int32 width, Int32 height)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(EffectLayer another_layer)
+   konum: Aurora.EffectsEngine.EffectLayer.op_Addition(EffectLayer lhs, EffectLayer rhs)
+   konum: Aurora.Effects.PushFrame(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:06.765: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(String name, Color color)
+   konum: Aurora.Effects.PushFrame(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:07.780: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor()
+   konum: Aurora.Settings.Layers.SolidColorLayerHandler.Render(IGameState gamestate)
+   konum: Aurora.Settings.Layers.Layer.Render(IGameState gs)
+   konum: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   konum: System.Collections.Generic.Queue`1..ctor(IEnumerable`1 collection)
+   konum: Aurora.Profiles.Desktop.Event_Desktop.UpdateLights(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:08.783: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: System.Drawing.Bitmap..ctor(Image original, Int32 width, Int32 height)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(EffectLayer another_layer)
+   konum: Aurora.Settings.Layers.LayerHandler`1.PostRenderFX(EffectLayer rendered_layer)
+   konum: Aurora.Settings.Layers.Layer.Render(IGameState gs)
+   konum: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   konum: System.Collections.Generic.Queue`1..ctor(IEnumerable`1 collection)
+   konum: Aurora.Profiles.Desktop.Event_Desktop.UpdateLights(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
+[ERROR] 2025-12-23 18:04:09.785: ProfilesManager.Update() Exception, System.ArgumentException: Parametre ge erli de il.
+   konum: System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   konum: System.Drawing.Bitmap..ctor(Image original, Int32 width, Int32 height)
+   konum: Aurora.EffectsEngine.EffectLayer..ctor(EffectLayer another_layer)
+   konum: Aurora.Settings.Layers.LayerHandler`1.PostRenderFX(EffectLayer rendered_layer)
+   konum: Aurora.Settings.Layers.Layer.Render(IGameState gs)
+   konum: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   konum: System.Collections.Generic.Queue`1..ctor(IEnumerable`1 collection)
+   konum: Aurora.Profiles.Desktop.Event_Desktop.UpdateLights(EffectFrame frame)
+   konum: Aurora.Profiles.LightingStateManager.Update()
+   konum: Aurora.Profiles.LightingStateManager.<InitUpdate>b__85_0()
