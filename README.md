@@ -12,14 +12,17 @@ Full architecture:
 App (HP Omen Lighting Service / UI)
 
    ↓
+   
 WMI suspicion and pipe and Something strange happened, I learned a lot from the log file, the RGB change does not go directly to the hardware. 
-UI → Named Pipe (CommandsServerIPC) → a one-stop point ACPI/WMI → background service. i
+
+UI → Named Pipe (CommandsServerIPC) → a one-stop point ACPI/WMI → background service. 
+
 This means that: UI (WPF / Aurora layer) Sends command via Named Pipe The pipe name is dynamic but the pattern is fixed.
 
 Aurora.dll (effects / bitmap)
-             ↓ 
+             
 Named Pipe (CommandsServerIPC) 
-             ↓
+             
 Omen Lighting Service (background) 
 
 But I searched for piped and couldn't find it, so I focused on the service part.
