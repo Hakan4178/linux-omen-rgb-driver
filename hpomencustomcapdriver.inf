@@ -1,0 +1,120 @@
+;
+; hpomencustomcapdriver.inf
+;
+; Installs the HP Omen Driver
+;
+; Copyright(c) 2017, HP Development Company, L.P.All rights reserved.
+; This software contains confidential and proprietary information of HP.
+; The user of this software agrees not to disclose, disseminate or copy
+; such Confidential Information and shall use the software only in accordance
+; with the terms of the license agreement the user entered into with HP.
+;
+
+[Version]
+Signature           = $Windows NT$
+Class               = System
+ClassGuid           = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider            = %Company%
+CatalogFile.ntamd64 = hpomencustomcapdriverx64.cat
+CatalogFile.ntx86   = hpomencustomcapdriverx86.cat
+DriverVer           = 07/01/2024,1.0.704.0
+PnpLockdown			= 1
+
+;======================= Device Install Section========================
+
+[DestinationDirs]
+EXE.CopyList.ntamd64 = 13, x64
+EXE.CopyList.ntx86 = 13, x86
+
+[Manufacturer]
+%Mfg% = HP, ntamd64.10.0...16299, ntx86.10.0...16299
+
+;======================= Device Install x64 Section ========================
+
+[HP.ntamd64.10.0...16299]
+%DeviceDesc% = hpomencustomcapdriver_Install.ntamd64, ACPI\HPIC0004
+
+[hpomencustomcapdriver_Install.ntamd64]
+CopyFiles = EXE.CopyList.ntamd64
+
+[SourceDisksNames.amd64]
+1 = %DiskId%, , , \x64
+
+[SourceDisksFiles.amd64]
+hpomencustomcapdriver.sys = 1
+
+[EXE.CopyList.ntamd64]
+hpomencustomcapdriver.sys, , %COPYFLG_FORCE_FILE_IN_USE%
+
+[hpomencustomcapdriver_Install.ntamd64.Services]
+AddService = HPOmenCustomCapDriver, 0x00000002, HPOmenCustomCapDriver_Service_Inst64, 
+
+[HPOmenCustomCapDriver_Service_Inst64]
+DisplayName    = %HPOmenCustomCapDriverDesc%
+ServiceType    = 0x00000001
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+LoadOrderGroup = "Base"
+ServiceBinary  = %13%\x64\hpomencustomcapdriver.sys
+
+;======================= Device Install x86 Section ========================
+
+[HP.ntx86.10.0...16299]
+%DeviceDesc% = hpomencustomcapdriver_Install.ntx86, ACPI\HPIC0004
+
+[hpomencustomcapdriver_Install.ntx86]
+CopyFiles = EXE.CopyList.ntx86
+
+[SourceDisksNames.x86]
+1 = %DiskId%, , , \x86
+
+[SourceDisksFiles.x86]
+hpomencustomcapdriver.sys = 1
+
+[EXE.CopyList.ntx86]
+hpomencustomcapdriver.sys, , %COPYFLG_FORCE_FILE_IN_USE%
+
+[hpomencustomcapdriver_Install.ntx86.Services]
+AddService = HPOmenCustomCapDriver, 0x00000002, HPOmenCustomCapDriver_Service_Inst86, 
+
+[HPOmenCustomCapDriver_Service_Inst86]
+DisplayName    = %HPOmenCustomCapDriverDesc%
+ServiceType    = 0x00000001
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+LoadOrderGroup = "Base"
+ServiceBinary  = %13%\x86\hpomencustomcapdriver.sys
+
+[Strings]
+Mfg = "HP"
+DiskId = "Install disk (1)"
+Company = "HP Inc."
+DeviceDesc = "HP Omen Driver"
+HPOmenCustomCapDriverDesc = "HP Omen Driver"
+
+;
+; The "standard" defines
+;
+REG_EXPAND_SZ = 0x00020000
+REG_DWORD = 0x00010001
+SERVICE_BOOT_START = 0x00000000
+SERVICE_SYSTEM_START = 0x00000001
+SERVICE_AUTO_START = 0x00000002
+SERVICE_DEMAND_START = 0x00000003
+SERVICE_DISABLED = 0x00000004
+SERVICE_ERROR_IGNORE = 0x00000000
+SERVICE_ERROR_NORMAL = 0x00000001
+SERVICE_ERROR_SEVERE = 0x00000002
+SERVICE_ERROR_CRITICAL = 0x00000003
+COPYFLG_WARN_IF_SKIP = 0x00000001
+COPYFLG_NOSKIP = 0x00000002
+COPYFLG_NOVERSIONCHECK = 0x00000004
+COPYFLG_FORCE_FILE_IN_USE = 0x00000008
+COPYFLG_NO_OVERWRITE = 0x00000010
+COPYFLG_NO_VERSION_DIALOG = 0x00000020
+COPYFLG_OVERWRITE_OLDER_ONLY = 0x00000040
+COPYFLG_REPLACEONLY = 0x00000400
+COPYFLG_NODECOMP = 0x00000800
+COPYFLG_REPLACE_BOOT_FILE = 0x00001000
+COPYFLG_NOPRUNE = 0x00002000
+COPYFLG_IN_USE_RENAME = 0x00004000
