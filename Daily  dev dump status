@@ -90,3 +90,164 @@ NEXT STEPS:
 [  411.381617] victus_acpi_discovery: Discovery completed!
 [  411.381620] victus_acpi_discovery: Results available at /proc/victus_acpi_discovery
 
+
+Tests and Results
+
+1. ProcMon Analysis
+
+IOCTL traffic was searched on omenlightstudio.exe
+
+Result:
+
+No IOCTL
+
+No named pipe
+
+No open device handle
+
+Conclusion:
+
+The EXE does not communicate directly with the kernel driver. There is a service/broker/bridge layer in between.
+
+2. Registry & GUID Searches
+
+GUIDs found in IDA were searched in the registry:
+
+reg query HKLM /s /f {GUID}
+
+No matches found
+
+Conclusion:
+
+This structure is not classic WMI/registry based.
+
+3. WMI/WBEMTest
+
+Namespace and method search was performed with wbemtest
+
+No methods matching the GUIDs in IDA were found
+
+Conclusion:
+
+WMI may only be a side channel, not the main path.
+
+IDA Pro Analysis (EXE)
+Binary Structure
+
+Heavy C++ naming conventions:
+
+Hp::Bridge::Server::Services::HIDService
+Hp::Bridge::Security
+MatchingDescriptor
+
+RTTI and vtables present
+
+.pdata section intensive → structured exception handling + C++ unwind
+
+Critical Discovery: HIDServiceService vtable
+.rdata:
+??_7HIDServiceService@... dq offset sub_180003350
+sub_1800035A0
+sub_180003640
+sub_180003690
+...
+
+3 important functions were identified under this vtable.
+
+sub_180003640 — Cleanup / Destructor
+
+Pointer controls
+
+free() calls
+
+Build cleanup
+
+Comment:
+
+This function is not functional, it's a destructor/cleanup helper.
+
+sub_1800035A0 — String / Buffer Builder
+
+operator new
+
+wcsnlen, wcscpy_s
+
+UTF-16 string copying
+
+Comment:
+
+Message/parameter preparation function
+
+sub_180003690 — Core Dispatcher (MOST CRITICAL)
+
+This function was identified as the central point in the analysis.
+
+Observations:
+
+Numerous local variables
+
+try/catch blocks
+
+operator new + free
+
+Referenced strings:
+
+"ExecuteCommand"
+
+"message"
+
+"outString"
+
+"unable to find function"
+
+"Unsupported Function call"
+
+Constant Error Codes:
+
+0x20000001
+
+0x2000001E
+
+These are:
+
+Not Win32
+
+Not NTSTATUS
+
+Vendor-defined error code
+
+Critical Technical Finding
+
+r14d register is used as Function ID/Opcode
+
+If Opcode lookup fails:
+
+"Unsupported Function call"
+
+Functions sub_180009160 and sub_180005260:
+
+Message parse
+
+Opcode → handler dispatch
+
+Comment:
+
+This function is running as a service-level RPC/IPC dispatcher instead of IOCTL.
+
+General Architectural Inference
+[OmenLightStudio.exe]
+↓
+ExecuteCommand
+↓
+Message Parse
+↓
+Opcode (r14d)
+↓
+Dispatcher (sub_180003690)
+↓
+Service / Broker
+↓
+(Possibly another EXE / service)
+↓
+Driver
+
