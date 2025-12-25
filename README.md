@@ -2,9 +2,6 @@
 Linux kernel driver for HP Omen RGB keyboard - Mainline goal
 CURRENTLY İN REVERSE ENGİNEERİNG!
 
-I'm finally back, I'm still actively trying new ways every day.
-
-
 Big Breakthrough!
 
 Full architecture:
@@ -25,16 +22,13 @@ Named Pipe (CommandsServerIPC)
              
 Omen Lighting Service (background) 
 
-THİS LİNE İS the daily *DEVelopment* line: But I searched for piped and couldn't find it, so I focused on the service part. SERVICE_NAME: HPOmenCap DISPLAY_NAME: HP Omen HSA Service I think I'll see all sorts of things on this road, it turns out that this kernel driver is not a very meaningful thing Still: GUID: 5B9766D8-6844-47AC-AB55-53952C9BE5BC
+THİS LİNE İS the daily *DEVelopment* line: But I searched for piped and couldn't find it, so I focused on the service part. SERVICE_NAME: HPOmenCap DISPLAY_NAME: HP Omen HSA Service I think I'll see all sorts of things on this road, it turns out that this kernel driver is not a very meaningful thing Still: GUID: 5B9766D8-6844-47AC-AB55-53952C9BE5BC  "OmenCap.exe = "HP Bridge" host The main job: Device.dll HIDService.dll Platform.dll SdkWrapperForNativeCode.dll This exe just: Security Authorization Object lifecycle IPC/RPC abstraction" 
 
    ↓
-ACPI → EC write
+ACPI? → EC write
 
    ↓
 Keyboard / RGB MCU
-
-
-Note: Reverse engineering is NOT finished for the minimum limited features. I'm going crazy with Linux user space virtual drive issues. I want this whole project to work on both the Victus and Omen series, or in general, on every device that runs Omen Light Studio. I'll also write a simple user space tool for testing purposes, but the main purpose is the kernel. I'll leave an advanced API for the user space. The program has an extremely complex flow.
 
 
 
